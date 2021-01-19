@@ -9,7 +9,11 @@ Documentation Linki -> https://hasansarman.github.io/Python_dynamic_modules_pres
 Bu yazilimdaki amac ->
 
 1- DINAMIK olarak runtime da module eklenme yontemlerini gosterebilmek
+
+
 2- farkli moduller kullanarak birden fazla algoritmayi ortak bir sekilde degerlendirebilmek ( old_result klasoru ve INPUT_OUTPUT/reports fikir verecektir.)
+
+
 3- pythonda karsilasilan araliksiz Run/Debug islemleri sirasinda test edilen kod ve ciktilarin surekli olarka karisikliga sebeb olmasi musanesebityle otomatik ZIP olusturarark log /cikti/reporlarin paketlenmesi.. 
 
 4- test edilmesi plananan her modul icin ornek -> Human detection icin , coco .. hog ..  dnn gibi bir cok farkli model/yapi denenirken bunlarin birbirleri arasindaki tam performans degerleri. her bir model icin resim hazirlama zamanindan islenmesi ve load timelara kadar gecen surelerin verimli bir sekilde kiyaslanabilmesi icin basit bir test platfomu olarak yazildi. sizlere sadece 
@@ -38,20 +42,27 @@ git clone https://github.com/hasansarman/Python_dynamic_modules_presentation_wit
 ```
 openalpr in kurulabilmesi icin asagidaki adimlar izlenmeli.. 
 ```
-sudo apt-get install libopencv-dev libtesseract-dev git cmake build-essential libleptonica-dev
+sudo apt-get install libopencv-dev libtesseract-dev git cmake build-essential libleptonica-dev```
 ```
-```
-sudo apt-get install liblog4cplus-dev libcurl3-dev
-```
+sudo apt-get install liblog4cplus-dev libcurl3-dev```
 ```
 sudo apt-get install beanstalkd
 ```
-openalpr/srcmkdir buildcd build# setup the compile environment
+```
+git clone https://github.com/openalpr/openalpr.git
+```
+```
+cd openalpr/src
+mkdir build
+cd build
+```
 ```
 cmake -DCMAKE_INSTALL_PREFIX:PATH=/usr -DCMAKE_INSTALL_SYSCONFDIR:PATH=/etc ..
 ```
 
-
+```
+make
+```
 ```
 sudo make install
 ```
