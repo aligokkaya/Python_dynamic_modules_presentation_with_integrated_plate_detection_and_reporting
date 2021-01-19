@@ -42,7 +42,9 @@ git clone https://github.com/hasansarman/Python_dynamic_modules_presentation_wit
 ```
 openalpr in kurulabilmesi icin asagidaki adimlar izlenmeli.. 
 ```
-sudo apt-get install libopencv-dev libtesseract-dev git cmake build-essential libleptonica-dev```
+sudo apt-get install libopencv-dev libtesseract-dev git cmake build-essential libleptonica-dev
+
+```
 ```
 sudo apt-get install liblog4cplus-dev libcurl3-dev```
 ```
