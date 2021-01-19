@@ -57,3 +57,22 @@ sudo make install
 ```
 wget http://plates.openalpr.com/h786poj.jpg -O lp.jpgalpr lp.jpg
 ```
+TEST PLATFOMUNUN DUZGUN CALISABILMESI ICIN VE SIZE GERCEK SKORLARI VE BASARIYI GOSTEREBILMESI ICIN Statics.RESULTSET dosyasini laistirmadan once kendi resultlariniza gore duzenlerseniz.. olusturdugu raporlarda tum sapma sekilleri ve duzeltmeler icin gerekli yuzdelik oneriyi yapacaktir. 
+
+
+
+Tum datalar ve ciktilar asagidaki klasor yapisi ile tutulmaktadir.. 
+
+logs/ -> her calismada yeni bir dosya olusuturp loglari hem konsoldan hemde file olarak yazar.. 
+
+
+INPUT_OUTPUT/img => input imagelerin listesi
+
+INPUT_OUTPUT/outputs => Her modulun step by step ciktisi alinmak istenirse yazilacak olan dosya.. islemler bitince ziplenerek saklanir.. 
+
+INPUT_OUTPUT/reports/ => her claistirmadan calisma zamani ile 1 klasor acarak her module icin timing ve basari oranlarini iceren bilahare 1 adet excel dosyasindada tum data ve ciktilari tutan dosyalari tutar
+
+old_results -> gecmis loglar ve reportlar ziplenerek timestamp ile tutulur
+ html -> documentation.. 
+
+
