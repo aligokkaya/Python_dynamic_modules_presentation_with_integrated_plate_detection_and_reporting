@@ -1,0 +1,718 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+<meta name="generator" content="pdoc 0.9.2" />
+<title>HasanSARMAN_PLAKA_OKUMA.modules.TestOpenalp.TestOpenalp API documentation</title>
+<meta name="description" content="" />
+<link rel="preload stylesheet" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/11.0.1/sanitize.min.css" integrity="sha256-PK9q560IAAa6WVRRh76LtCaI8pjTJ2z11v0miyNNjrs=" crossorigin>
+<link rel="preload stylesheet" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/11.0.1/typography.min.css" integrity="sha256-7l/o7C8jubJiy74VsKTidCy1yBkRtiUGbVkYBylBqUg=" crossorigin>
+<link rel="stylesheet preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/github.min.css" crossorigin>
+<style>:root{--highlight-color:#fe9}.flex{display:flex !important}body{line-height:1.5em}#content{padding:20px}#sidebar{padding:30px;overflow:hidden}#sidebar > *:last-child{margin-bottom:2cm}.http-server-breadcrumbs{font-size:130%;margin:0 0 15px 0}#footer{font-size:.75em;padding:5px 30px;border-top:1px solid #ddd;text-align:right}#footer p{margin:0 0 0 1em;display:inline-block}#footer p:last-child{margin-right:30px}h1,h2,h3,h4,h5{font-weight:300}h1{font-size:2.5em;line-height:1.1em}h2{font-size:1.75em;margin:1em 0 .50em 0}h3{font-size:1.4em;margin:25px 0 10px 0}h4{margin:0;font-size:105%}h1:target,h2:target,h3:target,h4:target,h5:target,h6:target{background:var(--highlight-color);padding:.2em 0}a{color:#058;text-decoration:none;transition:color .3s ease-in-out}a:hover{color:#e82}.title code{font-weight:bold}h2[id^="header-"]{margin-top:2em}.ident{color:#900}pre code{background:#f8f8f8;font-size:.8em;line-height:1.4em}code{background:#f2f2f1;padding:1px 4px;overflow-wrap:break-word}h1 code{background:transparent}pre{background:#f8f8f8;border:0;border-top:1px solid #ccc;border-bottom:1px solid #ccc;margin:1em 0;padding:1ex}#http-server-module-list{display:flex;flex-flow:column}#http-server-module-list div{display:flex}#http-server-module-list dt{min-width:10%}#http-server-module-list p{margin-top:0}.toc ul,#index{list-style-type:none;margin:0;padding:0}#index code{background:transparent}#index h3{border-bottom:1px solid #ddd}#index ul{padding:0}#index h4{margin-top:.6em;font-weight:bold}@media (min-width:200ex){#index .two-column{column-count:2}}@media (min-width:300ex){#index .two-column{column-count:3}}dl{margin-bottom:2em}dl dl:last-child{margin-bottom:4em}dd{margin:0 0 1em 3em}#header-classes + dl > dd{margin-bottom:3em}dd dd{margin-left:2em}dd p{margin:10px 0}.name{background:#eee;font-weight:bold;font-size:.85em;padding:5px 10px;display:inline-block;min-width:40%}.name:hover{background:#e0e0e0}dt:target .name{background:var(--highlight-color)}.name > span:first-child{white-space:nowrap}.name.class > span:nth-child(2){margin-left:.4em}.inherited{color:#999;border-left:5px solid #eee;padding-left:1em}.inheritance em{font-style:normal;font-weight:bold}.desc h2{font-weight:400;font-size:1.25em}.desc h3{font-size:1em}.desc dt code{background:inherit}.source summary,.git-link-div{color:#666;text-align:right;font-weight:400;font-size:.8em;text-transform:uppercase}.source summary > *{white-space:nowrap;cursor:pointer}.git-link{color:inherit;margin-left:1em}.source pre{max-height:500px;overflow:auto;margin:0}.source pre code{font-size:12px;overflow:visible}.hlist{list-style:none}.hlist li{display:inline}.hlist li:after{content:',\2002'}.hlist li:last-child:after{content:none}.hlist .hlist{display:inline;padding-left:1em}img{max-width:100%}td{padding:0 .5em}.admonition{padding:.1em .5em;margin-bottom:1em}.admonition-title{font-weight:bold}.admonition.note,.admonition.info,.admonition.important{background:#aef}.admonition.todo,.admonition.versionadded,.admonition.tip,.admonition.hint{background:#dfd}.admonition.warning,.admonition.versionchanged,.admonition.deprecated{background:#fd4}.admonition.error,.admonition.danger,.admonition.caution{background:lightpink}</style>
+<style media="screen and (min-width: 700px)">@media screen and (min-width:700px){#sidebar{width:30%;height:100vh;overflow:auto;position:sticky;top:0}#content{width:70%;max-width:100ch;padding:3em 4em;border-left:1px solid #ddd}pre code{font-size:1em}.item .name{font-size:1em}main{display:flex;flex-direction:row-reverse;justify-content:flex-end}.toc ul ul,#index ul{padding-left:1.5em}.toc > ul > li{margin-top:.5em}}</style>
+<style media="print">@media print{#sidebar h1{page-break-before:always}.source{display:none}}@media print{*{background:transparent !important;color:#000 !important;box-shadow:none !important;text-shadow:none !important}a[href]:after{content:" (" attr(href) ")";font-size:90%}a[href][title]:after{content:none}abbr[title]:after{content:" (" attr(title) ")"}.ir a:after,a[href^="javascript:"]:after,a[href^="#"]:after{content:""}pre,blockquote{border:1px solid #999;page-break-inside:avoid}thead{display:table-header-group}tr,img{page-break-inside:avoid}img{max-width:100% !important}@page{margin:0.5cm}p,h2,h3{orphans:3;widows:3}h1,h2,h3,h4,h5,h6{page-break-after:avoid}}</style>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js" integrity="sha256-Uv3H6lx7dJmRfRvH8TH6kJD1TSK1aFcwgx+mdg3epi8=" crossorigin></script>
+<script>window.addEventListener('DOMContentLoaded', () => hljs.initHighlighting())</script>
+</head>
+<body>
+<main>
+<article id="content">
+<header>
+<h1 class="title">Module <code>HasanSARMAN_PLAKA_OKUMA.modules.TestOpenalp.TestOpenalp</code></h1>
+</header>
+<section id="section-intro">
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">import subprocess
+
+from openalpr import Alpr
+
+from utils import Statics
+import itertools
+import os
+import platform
+import lsb_release
+from subprocess import STDOUT, check_call
+from timeit import default_timer as timer
+import ctypes
+import json
+import re
+from utils.UtilsGeneric import clear_text
+
+unicode = str
+_PYTHON_3 = True
+def _convert_to_charp(string):
+    # Prepares function input for use in c-functions as char*
+    if type(string) == unicode:
+        return string.encode(&#34;UTF-8&#34;)
+    elif type(string) == bytes:
+        return string
+    else:
+        raise TypeError(&#34;Expected unicode string values or ascii/bytes values. Got: %r&#34; % type(string))
+
+def _convert_from_charp(charp):
+    # Prepares char* output from c-functions into Python strings
+    if _PYTHON_3 and type(charp) == bytes:
+        return charp.decode(&#34;UTF-8&#34;)
+    else:
+        return charp
+class TestOpenalp:
+    &#34;&#34;&#34;
+            ATTENTION !! THIS MODULE ONLY WORKS ON DEBIAN BASED SYSTEMS
+            sudo apt-get install -y openalpr openalpr-daemon openalpr-utils libopenalpr-dev
+
+            If you wish to run this code on a raspberry or arm systems.. you should COMPILE !!
+
+            This Module uses Open ALP success rate is so so...
+
+
+        &#34;&#34;&#34;
+    prepare_start_time = None
+    prepare_end_time = None
+    start_time = None
+    end_time = None
+    each_img_process_time = {}
+    run=1
+    using_gpu = 0
+    my_info = {}
+    model_usage = 0
+    mymodels = []
+    retrain = 0
+    newlinux=0
+    region=&#34;eu&#34;
+    conf = &#34;/etc/openalpr/openalpr.conf&#34;
+    runtime = &#34;/usr/share/openalpr/runtime_data/&#34;
+    alpr = None
+    HOW_MANY_PASSES = 10
+    MY_RESULTS ={}
+
+    def __init__(self, model_usage=0):
+
+        self.model_usage = model_usage
+
+        self.my_info[&#34;name&#34;] = self.__class__
+        self.my_info[&#34;using_gpu&#34;] = self.using_gpu
+        self.my_info[&#34;module_presentation&#34;] = self.__doc__
+        self.my_info[&#34;used models&#34;] = self.mymodels
+
+
+    def return_my_dict(self):
+        return self.my_info
+
+    def return_dict_with_results(self):
+        return self.my_info
+
+    def check_deps(self):
+
+        # first check if alpr is installed..
+        install_me=0
+        return_data = &#34;&#34;
+        try:
+            result = subprocess.run([&#39;alpr&#39;, &#39;-v&#39;], stdout=subprocess.PIPE)
+            return_data = result.stdout
+        except :
+            install_me=1
+
+        if return_data.find(&#34;not found&#34;) &gt; -1  or install_me == 1:
+            # openalpr is not installed
+            check_call([&#39;apt-get&#39;, &#39;install&#39;, &#39;-y&#39;, &#39;openalpr&#39;, &#39;openalpr-daemon&#39;, &#39;openalpr-utils&#39;, &#39;libopenalpr-dev&#39;],
+                       stdout=open(os.devnull, &#39;wb&#39;), stderr=STDOUT)
+        try:
+            output_folder_name = &#39;INPUT_OUTPUT/outputs/&#39; + str(self.__class__.__name__)
+            os.makedirs(output_folder_name)
+        except OSError as e:
+            Statics.LOGGER.logme(str(self.__class__.__name__)+&#34; &#34;+str(e))
+
+    def start_main_timer(self):
+        start = timer()
+        self.start_time = start
+        self.MY_RESULTS[&#34;main_timer_start&#34;] = start
+
+    def end_main_timer(self):
+        end = timer()
+        self.end_time = end
+        self.MY_RESULTS[&#34;main_timer_end&#34;] = end
+
+    def prepare_img(self, imgx):
+        self.each_img_process_time[imgx] = {}
+        self.MY_RESULTS[imgx] = {}
+        start1 = timer()
+        self.each_img_process_time[imgx][&#34;prepare_start_&#34;] = start1
+        self.MY_RESULTS[imgx][&#34;prepare_start_&#34;] = start1
+        # process
+        # no preparing needed
+        end1 = timer()
+        self.each_img_process_time[imgx][&#34;prepare_end&#34;] = end1
+        self.MY_RESULTS[imgx][&#34;prepare_end_&#34;] = end1
+
+    def prepare(self):
+        start = timer()
+        self.prepare_start_time = start
+        # no prepare needed
+        self.MY_RESULTS[&#34;prepare_start&#34;] = start
+
+        end = timer()
+        self.prepare_end_time = end
+        self.MY_RESULTS[&#34;prepare_end&#34;] = end
+
+    def start_(self, imgx):
+
+        start1 = timer()
+        self.each_img_process_time[imgx][&#34;_start&#34;] = start1
+        self.MY_RESULTS[imgx][&#34;_start&#34;] = start1
+        # process
+        img_path=os.getcwd()+&#34;/&#34;+imgx
+        result = subprocess.run([&#39;alpr&#39;, &#39;-c&#39;,&#34;eu&#34; , img_path], stdout=subprocess.PIPE)
+        return_data = result.stdout.decode(&#39;utf-8&#39;)
+        i = 0
+
+        parse_str=str(return_data).split(&#34;\n&#34;)
+        resultset={}
+        count = 0
+        for s in parse_str:
+            if s.find(&#34;confidence&#34;) &gt; -1:
+                #news=clear_text(s)
+                foostr=re.split(r&#39;\t+&#39;, s)
+                if len(foostr)&gt;=1 :
+                    plate=clear_text(foostr[0])
+                    clear_percentage=foostr[1].replace(&#34; confidence: &#34;,&#34;&#34;)
+                    clear_percentage =float(clear_percentage)
+                    foo_result={&#34;plate&#34;:plate,&#34;percentage&#34;:clear_percentage}
+                    resultset[count]=foo_result
+                    count = count+1
+
+
+                Statics.LOGGER.logme(str(self.__class__.__name__) + &#34; &#34; + str(foostr))
+
+
+        biggest_percentage=float(0)
+        plate_of_biggest_percentage=&#34;&#34;
+        for i in resultset :
+            mydata=resultset[i]
+            if mydata[&#34;percentage&#34;] &gt; biggest_percentage :
+                biggest_percentage=mydata[&#34;percentage&#34;]
+                plate_of_biggest_percentage =mydata[&#34;plate&#34;]
+        self.MY_RESULTS[imgx][&#34;result&#34;] = plate_of_biggest_percentage
+        self.MY_RESULTS[imgx][&#34;dirty_result&#34;] = clear_text(plate_of_biggest_percentage)
+
+
+
+
+        end1 = timer()
+        self.each_img_process_time[imgx][&#34;_end&#34;] = end1
+        self.MY_RESULTS[imgx][&#34;_end&#34;] = end1
+
+    def end_(self):
+        self.alpr.unload()</code></pre>
+</details>
+</section>
+<section>
+</section>
+<section>
+</section>
+<section>
+</section>
+<section>
+<h2 class="section-title" id="header-classes">Classes</h2>
+<dl>
+<dt id="HasanSARMAN_PLAKA_OKUMA.modules.TestOpenalp.TestOpenalp.TestOpenalp"><code class="flex name class">
+<span>class <span class="ident">TestOpenalp</span></span>
+<span>(</span><span>model_usage=0)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>ATTENTION !! THIS MODULE ONLY WORKS ON DEBIAN BASED SYSTEMS
+sudo apt-get install -y openalpr openalpr-daemon openalpr-utils libopenalpr-dev</p>
+<p>If you wish to run this code on a raspberry or arm systems.. you should COMPILE !!</p>
+<p>This Module uses Open ALP success rate is so so&hellip;</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">class TestOpenalp:
+    &#34;&#34;&#34;
+            ATTENTION !! THIS MODULE ONLY WORKS ON DEBIAN BASED SYSTEMS
+            sudo apt-get install -y openalpr openalpr-daemon openalpr-utils libopenalpr-dev
+
+            If you wish to run this code on a raspberry or arm systems.. you should COMPILE !!
+
+            This Module uses Open ALP success rate is so so...
+
+
+        &#34;&#34;&#34;
+    prepare_start_time = None
+    prepare_end_time = None
+    start_time = None
+    end_time = None
+    each_img_process_time = {}
+    run=1
+    using_gpu = 0
+    my_info = {}
+    model_usage = 0
+    mymodels = []
+    retrain = 0
+    newlinux=0
+    region=&#34;eu&#34;
+    conf = &#34;/etc/openalpr/openalpr.conf&#34;
+    runtime = &#34;/usr/share/openalpr/runtime_data/&#34;
+    alpr = None
+    HOW_MANY_PASSES = 10
+    MY_RESULTS ={}
+
+    def __init__(self, model_usage=0):
+
+        self.model_usage = model_usage
+
+        self.my_info[&#34;name&#34;] = self.__class__
+        self.my_info[&#34;using_gpu&#34;] = self.using_gpu
+        self.my_info[&#34;module_presentation&#34;] = self.__doc__
+        self.my_info[&#34;used models&#34;] = self.mymodels
+
+
+    def return_my_dict(self):
+        return self.my_info
+
+    def return_dict_with_results(self):
+        return self.my_info
+
+    def check_deps(self):
+
+        # first check if alpr is installed..
+        install_me=0
+        return_data = &#34;&#34;
+        try:
+            result = subprocess.run([&#39;alpr&#39;, &#39;-v&#39;], stdout=subprocess.PIPE)
+            return_data = result.stdout
+        except :
+            install_me=1
+
+        if return_data.find(&#34;not found&#34;) &gt; -1  or install_me == 1:
+            # openalpr is not installed
+            check_call([&#39;apt-get&#39;, &#39;install&#39;, &#39;-y&#39;, &#39;openalpr&#39;, &#39;openalpr-daemon&#39;, &#39;openalpr-utils&#39;, &#39;libopenalpr-dev&#39;],
+                       stdout=open(os.devnull, &#39;wb&#39;), stderr=STDOUT)
+        try:
+            output_folder_name = &#39;INPUT_OUTPUT/outputs/&#39; + str(self.__class__.__name__)
+            os.makedirs(output_folder_name)
+        except OSError as e:
+            Statics.LOGGER.logme(str(self.__class__.__name__)+&#34; &#34;+str(e))
+
+    def start_main_timer(self):
+        start = timer()
+        self.start_time = start
+        self.MY_RESULTS[&#34;main_timer_start&#34;] = start
+
+    def end_main_timer(self):
+        end = timer()
+        self.end_time = end
+        self.MY_RESULTS[&#34;main_timer_end&#34;] = end
+
+    def prepare_img(self, imgx):
+        self.each_img_process_time[imgx] = {}
+        self.MY_RESULTS[imgx] = {}
+        start1 = timer()
+        self.each_img_process_time[imgx][&#34;prepare_start_&#34;] = start1
+        self.MY_RESULTS[imgx][&#34;prepare_start_&#34;] = start1
+        # process
+        # no preparing needed
+        end1 = timer()
+        self.each_img_process_time[imgx][&#34;prepare_end&#34;] = end1
+        self.MY_RESULTS[imgx][&#34;prepare_end_&#34;] = end1
+
+    def prepare(self):
+        start = timer()
+        self.prepare_start_time = start
+        # no prepare needed
+        self.MY_RESULTS[&#34;prepare_start&#34;] = start
+
+        end = timer()
+        self.prepare_end_time = end
+        self.MY_RESULTS[&#34;prepare_end&#34;] = end
+
+    def start_(self, imgx):
+
+        start1 = timer()
+        self.each_img_process_time[imgx][&#34;_start&#34;] = start1
+        self.MY_RESULTS[imgx][&#34;_start&#34;] = start1
+        # process
+        img_path=os.getcwd()+&#34;/&#34;+imgx
+        result = subprocess.run([&#39;alpr&#39;, &#39;-c&#39;,&#34;eu&#34; , img_path], stdout=subprocess.PIPE)
+        return_data = result.stdout.decode(&#39;utf-8&#39;)
+        i = 0
+
+        parse_str=str(return_data).split(&#34;\n&#34;)
+        resultset={}
+        count = 0
+        for s in parse_str:
+            if s.find(&#34;confidence&#34;) &gt; -1:
+                #news=clear_text(s)
+                foostr=re.split(r&#39;\t+&#39;, s)
+                if len(foostr)&gt;=1 :
+                    plate=clear_text(foostr[0])
+                    clear_percentage=foostr[1].replace(&#34; confidence: &#34;,&#34;&#34;)
+                    clear_percentage =float(clear_percentage)
+                    foo_result={&#34;plate&#34;:plate,&#34;percentage&#34;:clear_percentage}
+                    resultset[count]=foo_result
+                    count = count+1
+
+
+                Statics.LOGGER.logme(str(self.__class__.__name__) + &#34; &#34; + str(foostr))
+
+
+        biggest_percentage=float(0)
+        plate_of_biggest_percentage=&#34;&#34;
+        for i in resultset :
+            mydata=resultset[i]
+            if mydata[&#34;percentage&#34;] &gt; biggest_percentage :
+                biggest_percentage=mydata[&#34;percentage&#34;]
+                plate_of_biggest_percentage =mydata[&#34;plate&#34;]
+        self.MY_RESULTS[imgx][&#34;result&#34;] = plate_of_biggest_percentage
+        self.MY_RESULTS[imgx][&#34;dirty_result&#34;] = clear_text(plate_of_biggest_percentage)
+
+
+
+
+        end1 = timer()
+        self.each_img_process_time[imgx][&#34;_end&#34;] = end1
+        self.MY_RESULTS[imgx][&#34;_end&#34;] = end1
+
+    def end_(self):
+        self.alpr.unload()</code></pre>
+</details>
+<h3>Class variables</h3>
+<dl>
+<dt id="HasanSARMAN_PLAKA_OKUMA.modules.TestOpenalp.TestOpenalp.TestOpenalp.HOW_MANY_PASSES"><code class="name">var <span class="ident">HOW_MANY_PASSES</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="HasanSARMAN_PLAKA_OKUMA.modules.TestOpenalp.TestOpenalp.TestOpenalp.MY_RESULTS"><code class="name">var <span class="ident">MY_RESULTS</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="HasanSARMAN_PLAKA_OKUMA.modules.TestOpenalp.TestOpenalp.TestOpenalp.alpr"><code class="name">var <span class="ident">alpr</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="HasanSARMAN_PLAKA_OKUMA.modules.TestOpenalp.TestOpenalp.TestOpenalp.conf"><code class="name">var <span class="ident">conf</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="HasanSARMAN_PLAKA_OKUMA.modules.TestOpenalp.TestOpenalp.TestOpenalp.each_img_process_time"><code class="name">var <span class="ident">each_img_process_time</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="HasanSARMAN_PLAKA_OKUMA.modules.TestOpenalp.TestOpenalp.TestOpenalp.end_time"><code class="name">var <span class="ident">end_time</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="HasanSARMAN_PLAKA_OKUMA.modules.TestOpenalp.TestOpenalp.TestOpenalp.model_usage"><code class="name">var <span class="ident">model_usage</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="HasanSARMAN_PLAKA_OKUMA.modules.TestOpenalp.TestOpenalp.TestOpenalp.my_info"><code class="name">var <span class="ident">my_info</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="HasanSARMAN_PLAKA_OKUMA.modules.TestOpenalp.TestOpenalp.TestOpenalp.mymodels"><code class="name">var <span class="ident">mymodels</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="HasanSARMAN_PLAKA_OKUMA.modules.TestOpenalp.TestOpenalp.TestOpenalp.newlinux"><code class="name">var <span class="ident">newlinux</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="HasanSARMAN_PLAKA_OKUMA.modules.TestOpenalp.TestOpenalp.TestOpenalp.prepare_end_time"><code class="name">var <span class="ident">prepare_end_time</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="HasanSARMAN_PLAKA_OKUMA.modules.TestOpenalp.TestOpenalp.TestOpenalp.prepare_start_time"><code class="name">var <span class="ident">prepare_start_time</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="HasanSARMAN_PLAKA_OKUMA.modules.TestOpenalp.TestOpenalp.TestOpenalp.region"><code class="name">var <span class="ident">region</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="HasanSARMAN_PLAKA_OKUMA.modules.TestOpenalp.TestOpenalp.TestOpenalp.retrain"><code class="name">var <span class="ident">retrain</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="HasanSARMAN_PLAKA_OKUMA.modules.TestOpenalp.TestOpenalp.TestOpenalp.run"><code class="name">var <span class="ident">run</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="HasanSARMAN_PLAKA_OKUMA.modules.TestOpenalp.TestOpenalp.TestOpenalp.runtime"><code class="name">var <span class="ident">runtime</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="HasanSARMAN_PLAKA_OKUMA.modules.TestOpenalp.TestOpenalp.TestOpenalp.start_time"><code class="name">var <span class="ident">start_time</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="HasanSARMAN_PLAKA_OKUMA.modules.TestOpenalp.TestOpenalp.TestOpenalp.using_gpu"><code class="name">var <span class="ident">using_gpu</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+</dl>
+<h3>Methods</h3>
+<dl>
+<dt id="HasanSARMAN_PLAKA_OKUMA.modules.TestOpenalp.TestOpenalp.TestOpenalp.check_deps"><code class="name flex">
+<span>def <span class="ident">check_deps</span></span>(<span>self)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def check_deps(self):
+
+    # first check if alpr is installed..
+    install_me=0
+    return_data = &#34;&#34;
+    try:
+        result = subprocess.run([&#39;alpr&#39;, &#39;-v&#39;], stdout=subprocess.PIPE)
+        return_data = result.stdout
+    except :
+        install_me=1
+
+    if return_data.find(&#34;not found&#34;) &gt; -1  or install_me == 1:
+        # openalpr is not installed
+        check_call([&#39;apt-get&#39;, &#39;install&#39;, &#39;-y&#39;, &#39;openalpr&#39;, &#39;openalpr-daemon&#39;, &#39;openalpr-utils&#39;, &#39;libopenalpr-dev&#39;],
+                   stdout=open(os.devnull, &#39;wb&#39;), stderr=STDOUT)
+    try:
+        output_folder_name = &#39;INPUT_OUTPUT/outputs/&#39; + str(self.__class__.__name__)
+        os.makedirs(output_folder_name)
+    except OSError as e:
+        Statics.LOGGER.logme(str(self.__class__.__name__)+&#34; &#34;+str(e))</code></pre>
+</details>
+</dd>
+<dt id="HasanSARMAN_PLAKA_OKUMA.modules.TestOpenalp.TestOpenalp.TestOpenalp.end_"><code class="name flex">
+<span>def <span class="ident">end_</span></span>(<span>self)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def end_(self):
+    self.alpr.unload()</code></pre>
+</details>
+</dd>
+<dt id="HasanSARMAN_PLAKA_OKUMA.modules.TestOpenalp.TestOpenalp.TestOpenalp.end_main_timer"><code class="name flex">
+<span>def <span class="ident">end_main_timer</span></span>(<span>self)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def end_main_timer(self):
+    end = timer()
+    self.end_time = end
+    self.MY_RESULTS[&#34;main_timer_end&#34;] = end</code></pre>
+</details>
+</dd>
+<dt id="HasanSARMAN_PLAKA_OKUMA.modules.TestOpenalp.TestOpenalp.TestOpenalp.prepare"><code class="name flex">
+<span>def <span class="ident">prepare</span></span>(<span>self)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def prepare(self):
+    start = timer()
+    self.prepare_start_time = start
+    # no prepare needed
+    self.MY_RESULTS[&#34;prepare_start&#34;] = start
+
+    end = timer()
+    self.prepare_end_time = end
+    self.MY_RESULTS[&#34;prepare_end&#34;] = end</code></pre>
+</details>
+</dd>
+<dt id="HasanSARMAN_PLAKA_OKUMA.modules.TestOpenalp.TestOpenalp.TestOpenalp.prepare_img"><code class="name flex">
+<span>def <span class="ident">prepare_img</span></span>(<span>self, imgx)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def prepare_img(self, imgx):
+    self.each_img_process_time[imgx] = {}
+    self.MY_RESULTS[imgx] = {}
+    start1 = timer()
+    self.each_img_process_time[imgx][&#34;prepare_start_&#34;] = start1
+    self.MY_RESULTS[imgx][&#34;prepare_start_&#34;] = start1
+    # process
+    # no preparing needed
+    end1 = timer()
+    self.each_img_process_time[imgx][&#34;prepare_end&#34;] = end1
+    self.MY_RESULTS[imgx][&#34;prepare_end_&#34;] = end1</code></pre>
+</details>
+</dd>
+<dt id="HasanSARMAN_PLAKA_OKUMA.modules.TestOpenalp.TestOpenalp.TestOpenalp.return_dict_with_results"><code class="name flex">
+<span>def <span class="ident">return_dict_with_results</span></span>(<span>self)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def return_dict_with_results(self):
+    return self.my_info</code></pre>
+</details>
+</dd>
+<dt id="HasanSARMAN_PLAKA_OKUMA.modules.TestOpenalp.TestOpenalp.TestOpenalp.return_my_dict"><code class="name flex">
+<span>def <span class="ident">return_my_dict</span></span>(<span>self)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def return_my_dict(self):
+    return self.my_info</code></pre>
+</details>
+</dd>
+<dt id="HasanSARMAN_PLAKA_OKUMA.modules.TestOpenalp.TestOpenalp.TestOpenalp.start_"><code class="name flex">
+<span>def <span class="ident">start_</span></span>(<span>self, imgx)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def start_(self, imgx):
+
+    start1 = timer()
+    self.each_img_process_time[imgx][&#34;_start&#34;] = start1
+    self.MY_RESULTS[imgx][&#34;_start&#34;] = start1
+    # process
+    img_path=os.getcwd()+&#34;/&#34;+imgx
+    result = subprocess.run([&#39;alpr&#39;, &#39;-c&#39;,&#34;eu&#34; , img_path], stdout=subprocess.PIPE)
+    return_data = result.stdout.decode(&#39;utf-8&#39;)
+    i = 0
+
+    parse_str=str(return_data).split(&#34;\n&#34;)
+    resultset={}
+    count = 0
+    for s in parse_str:
+        if s.find(&#34;confidence&#34;) &gt; -1:
+            #news=clear_text(s)
+            foostr=re.split(r&#39;\t+&#39;, s)
+            if len(foostr)&gt;=1 :
+                plate=clear_text(foostr[0])
+                clear_percentage=foostr[1].replace(&#34; confidence: &#34;,&#34;&#34;)
+                clear_percentage =float(clear_percentage)
+                foo_result={&#34;plate&#34;:plate,&#34;percentage&#34;:clear_percentage}
+                resultset[count]=foo_result
+                count = count+1
+
+
+            Statics.LOGGER.logme(str(self.__class__.__name__) + &#34; &#34; + str(foostr))
+
+
+    biggest_percentage=float(0)
+    plate_of_biggest_percentage=&#34;&#34;
+    for i in resultset :
+        mydata=resultset[i]
+        if mydata[&#34;percentage&#34;] &gt; biggest_percentage :
+            biggest_percentage=mydata[&#34;percentage&#34;]
+            plate_of_biggest_percentage =mydata[&#34;plate&#34;]
+    self.MY_RESULTS[imgx][&#34;result&#34;] = plate_of_biggest_percentage
+    self.MY_RESULTS[imgx][&#34;dirty_result&#34;] = clear_text(plate_of_biggest_percentage)
+
+
+
+
+    end1 = timer()
+    self.each_img_process_time[imgx][&#34;_end&#34;] = end1
+    self.MY_RESULTS[imgx][&#34;_end&#34;] = end1</code></pre>
+</details>
+</dd>
+<dt id="HasanSARMAN_PLAKA_OKUMA.modules.TestOpenalp.TestOpenalp.TestOpenalp.start_main_timer"><code class="name flex">
+<span>def <span class="ident">start_main_timer</span></span>(<span>self)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def start_main_timer(self):
+    start = timer()
+    self.start_time = start
+    self.MY_RESULTS[&#34;main_timer_start&#34;] = start</code></pre>
+</details>
+</dd>
+</dl>
+</dd>
+</dl>
+</section>
+</article>
+<nav id="sidebar">
+<h1>Index</h1>
+<div class="toc">
+<ul></ul>
+</div>
+<ul id="index">
+<li><h3>Super-module</h3>
+<ul>
+<li><code><a title="HasanSARMAN_PLAKA_OKUMA.modules.TestOpenalp" href="index.html">HasanSARMAN_PLAKA_OKUMA.modules.TestOpenalp</a></code></li>
+</ul>
+</li>
+<li><h3><a href="#header-classes">Classes</a></h3>
+<ul>
+<li>
+<h4><code><a title="HasanSARMAN_PLAKA_OKUMA.modules.TestOpenalp.TestOpenalp.TestOpenalp" href="#HasanSARMAN_PLAKA_OKUMA.modules.TestOpenalp.TestOpenalp.TestOpenalp">TestOpenalp</a></code></h4>
+<ul class="">
+<li><code><a title="HasanSARMAN_PLAKA_OKUMA.modules.TestOpenalp.TestOpenalp.TestOpenalp.HOW_MANY_PASSES" href="#HasanSARMAN_PLAKA_OKUMA.modules.TestOpenalp.TestOpenalp.TestOpenalp.HOW_MANY_PASSES">HOW_MANY_PASSES</a></code></li>
+<li><code><a title="HasanSARMAN_PLAKA_OKUMA.modules.TestOpenalp.TestOpenalp.TestOpenalp.MY_RESULTS" href="#HasanSARMAN_PLAKA_OKUMA.modules.TestOpenalp.TestOpenalp.TestOpenalp.MY_RESULTS">MY_RESULTS</a></code></li>
+<li><code><a title="HasanSARMAN_PLAKA_OKUMA.modules.TestOpenalp.TestOpenalp.TestOpenalp.alpr" href="#HasanSARMAN_PLAKA_OKUMA.modules.TestOpenalp.TestOpenalp.TestOpenalp.alpr">alpr</a></code></li>
+<li><code><a title="HasanSARMAN_PLAKA_OKUMA.modules.TestOpenalp.TestOpenalp.TestOpenalp.check_deps" href="#HasanSARMAN_PLAKA_OKUMA.modules.TestOpenalp.TestOpenalp.TestOpenalp.check_deps">check_deps</a></code></li>
+<li><code><a title="HasanSARMAN_PLAKA_OKUMA.modules.TestOpenalp.TestOpenalp.TestOpenalp.conf" href="#HasanSARMAN_PLAKA_OKUMA.modules.TestOpenalp.TestOpenalp.TestOpenalp.conf">conf</a></code></li>
+<li><code><a title="HasanSARMAN_PLAKA_OKUMA.modules.TestOpenalp.TestOpenalp.TestOpenalp.each_img_process_time" href="#HasanSARMAN_PLAKA_OKUMA.modules.TestOpenalp.TestOpenalp.TestOpenalp.each_img_process_time">each_img_process_time</a></code></li>
+<li><code><a title="HasanSARMAN_PLAKA_OKUMA.modules.TestOpenalp.TestOpenalp.TestOpenalp.end_" href="#HasanSARMAN_PLAKA_OKUMA.modules.TestOpenalp.TestOpenalp.TestOpenalp.end_">end_</a></code></li>
+<li><code><a title="HasanSARMAN_PLAKA_OKUMA.modules.TestOpenalp.TestOpenalp.TestOpenalp.end_main_timer" href="#HasanSARMAN_PLAKA_OKUMA.modules.TestOpenalp.TestOpenalp.TestOpenalp.end_main_timer">end_main_timer</a></code></li>
+<li><code><a title="HasanSARMAN_PLAKA_OKUMA.modules.TestOpenalp.TestOpenalp.TestOpenalp.end_time" href="#HasanSARMAN_PLAKA_OKUMA.modules.TestOpenalp.TestOpenalp.TestOpenalp.end_time">end_time</a></code></li>
+<li><code><a title="HasanSARMAN_PLAKA_OKUMA.modules.TestOpenalp.TestOpenalp.TestOpenalp.model_usage" href="#HasanSARMAN_PLAKA_OKUMA.modules.TestOpenalp.TestOpenalp.TestOpenalp.model_usage">model_usage</a></code></li>
+<li><code><a title="HasanSARMAN_PLAKA_OKUMA.modules.TestOpenalp.TestOpenalp.TestOpenalp.my_info" href="#HasanSARMAN_PLAKA_OKUMA.modules.TestOpenalp.TestOpenalp.TestOpenalp.my_info">my_info</a></code></li>
+<li><code><a title="HasanSARMAN_PLAKA_OKUMA.modules.TestOpenalp.TestOpenalp.TestOpenalp.mymodels" href="#HasanSARMAN_PLAKA_OKUMA.modules.TestOpenalp.TestOpenalp.TestOpenalp.mymodels">mymodels</a></code></li>
+<li><code><a title="HasanSARMAN_PLAKA_OKUMA.modules.TestOpenalp.TestOpenalp.TestOpenalp.newlinux" href="#HasanSARMAN_PLAKA_OKUMA.modules.TestOpenalp.TestOpenalp.TestOpenalp.newlinux">newlinux</a></code></li>
+<li><code><a title="HasanSARMAN_PLAKA_OKUMA.modules.TestOpenalp.TestOpenalp.TestOpenalp.prepare" href="#HasanSARMAN_PLAKA_OKUMA.modules.TestOpenalp.TestOpenalp.TestOpenalp.prepare">prepare</a></code></li>
+<li><code><a title="HasanSARMAN_PLAKA_OKUMA.modules.TestOpenalp.TestOpenalp.TestOpenalp.prepare_end_time" href="#HasanSARMAN_PLAKA_OKUMA.modules.TestOpenalp.TestOpenalp.TestOpenalp.prepare_end_time">prepare_end_time</a></code></li>
+<li><code><a title="HasanSARMAN_PLAKA_OKUMA.modules.TestOpenalp.TestOpenalp.TestOpenalp.prepare_img" href="#HasanSARMAN_PLAKA_OKUMA.modules.TestOpenalp.TestOpenalp.TestOpenalp.prepare_img">prepare_img</a></code></li>
+<li><code><a title="HasanSARMAN_PLAKA_OKUMA.modules.TestOpenalp.TestOpenalp.TestOpenalp.prepare_start_time" href="#HasanSARMAN_PLAKA_OKUMA.modules.TestOpenalp.TestOpenalp.TestOpenalp.prepare_start_time">prepare_start_time</a></code></li>
+<li><code><a title="HasanSARMAN_PLAKA_OKUMA.modules.TestOpenalp.TestOpenalp.TestOpenalp.region" href="#HasanSARMAN_PLAKA_OKUMA.modules.TestOpenalp.TestOpenalp.TestOpenalp.region">region</a></code></li>
+<li><code><a title="HasanSARMAN_PLAKA_OKUMA.modules.TestOpenalp.TestOpenalp.TestOpenalp.retrain" href="#HasanSARMAN_PLAKA_OKUMA.modules.TestOpenalp.TestOpenalp.TestOpenalp.retrain">retrain</a></code></li>
+<li><code><a title="HasanSARMAN_PLAKA_OKUMA.modules.TestOpenalp.TestOpenalp.TestOpenalp.return_dict_with_results" href="#HasanSARMAN_PLAKA_OKUMA.modules.TestOpenalp.TestOpenalp.TestOpenalp.return_dict_with_results">return_dict_with_results</a></code></li>
+<li><code><a title="HasanSARMAN_PLAKA_OKUMA.modules.TestOpenalp.TestOpenalp.TestOpenalp.return_my_dict" href="#HasanSARMAN_PLAKA_OKUMA.modules.TestOpenalp.TestOpenalp.TestOpenalp.return_my_dict">return_my_dict</a></code></li>
+<li><code><a title="HasanSARMAN_PLAKA_OKUMA.modules.TestOpenalp.TestOpenalp.TestOpenalp.run" href="#HasanSARMAN_PLAKA_OKUMA.modules.TestOpenalp.TestOpenalp.TestOpenalp.run">run</a></code></li>
+<li><code><a title="HasanSARMAN_PLAKA_OKUMA.modules.TestOpenalp.TestOpenalp.TestOpenalp.runtime" href="#HasanSARMAN_PLAKA_OKUMA.modules.TestOpenalp.TestOpenalp.TestOpenalp.runtime">runtime</a></code></li>
+<li><code><a title="HasanSARMAN_PLAKA_OKUMA.modules.TestOpenalp.TestOpenalp.TestOpenalp.start_" href="#HasanSARMAN_PLAKA_OKUMA.modules.TestOpenalp.TestOpenalp.TestOpenalp.start_">start_</a></code></li>
+<li><code><a title="HasanSARMAN_PLAKA_OKUMA.modules.TestOpenalp.TestOpenalp.TestOpenalp.start_main_timer" href="#HasanSARMAN_PLAKA_OKUMA.modules.TestOpenalp.TestOpenalp.TestOpenalp.start_main_timer">start_main_timer</a></code></li>
+<li><code><a title="HasanSARMAN_PLAKA_OKUMA.modules.TestOpenalp.TestOpenalp.TestOpenalp.start_time" href="#HasanSARMAN_PLAKA_OKUMA.modules.TestOpenalp.TestOpenalp.TestOpenalp.start_time">start_time</a></code></li>
+<li><code><a title="HasanSARMAN_PLAKA_OKUMA.modules.TestOpenalp.TestOpenalp.TestOpenalp.using_gpu" href="#HasanSARMAN_PLAKA_OKUMA.modules.TestOpenalp.TestOpenalp.TestOpenalp.using_gpu">using_gpu</a></code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+</main>
+<footer id="footer">
+<p>Generated by <a href="https://pdoc3.github.io/pdoc"><cite>pdoc</cite> 0.9.2</a>.</p>
+</footer>
+</body>
+</html>

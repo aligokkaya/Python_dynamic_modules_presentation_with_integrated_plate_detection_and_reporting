@@ -1,0 +1,936 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+<meta name="generator" content="pdoc 0.9.2" />
+<title>HasanSARMAN_PLAKA_OKUMA.modules.TestEasttext.TestEasttext API documentation</title>
+<meta name="description" content="" />
+<link rel="preload stylesheet" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/11.0.1/sanitize.min.css" integrity="sha256-PK9q560IAAa6WVRRh76LtCaI8pjTJ2z11v0miyNNjrs=" crossorigin>
+<link rel="preload stylesheet" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/11.0.1/typography.min.css" integrity="sha256-7l/o7C8jubJiy74VsKTidCy1yBkRtiUGbVkYBylBqUg=" crossorigin>
+<link rel="stylesheet preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/github.min.css" crossorigin>
+<style>:root{--highlight-color:#fe9}.flex{display:flex !important}body{line-height:1.5em}#content{padding:20px}#sidebar{padding:30px;overflow:hidden}#sidebar > *:last-child{margin-bottom:2cm}.http-server-breadcrumbs{font-size:130%;margin:0 0 15px 0}#footer{font-size:.75em;padding:5px 30px;border-top:1px solid #ddd;text-align:right}#footer p{margin:0 0 0 1em;display:inline-block}#footer p:last-child{margin-right:30px}h1,h2,h3,h4,h5{font-weight:300}h1{font-size:2.5em;line-height:1.1em}h2{font-size:1.75em;margin:1em 0 .50em 0}h3{font-size:1.4em;margin:25px 0 10px 0}h4{margin:0;font-size:105%}h1:target,h2:target,h3:target,h4:target,h5:target,h6:target{background:var(--highlight-color);padding:.2em 0}a{color:#058;text-decoration:none;transition:color .3s ease-in-out}a:hover{color:#e82}.title code{font-weight:bold}h2[id^="header-"]{margin-top:2em}.ident{color:#900}pre code{background:#f8f8f8;font-size:.8em;line-height:1.4em}code{background:#f2f2f1;padding:1px 4px;overflow-wrap:break-word}h1 code{background:transparent}pre{background:#f8f8f8;border:0;border-top:1px solid #ccc;border-bottom:1px solid #ccc;margin:1em 0;padding:1ex}#http-server-module-list{display:flex;flex-flow:column}#http-server-module-list div{display:flex}#http-server-module-list dt{min-width:10%}#http-server-module-list p{margin-top:0}.toc ul,#index{list-style-type:none;margin:0;padding:0}#index code{background:transparent}#index h3{border-bottom:1px solid #ddd}#index ul{padding:0}#index h4{margin-top:.6em;font-weight:bold}@media (min-width:200ex){#index .two-column{column-count:2}}@media (min-width:300ex){#index .two-column{column-count:3}}dl{margin-bottom:2em}dl dl:last-child{margin-bottom:4em}dd{margin:0 0 1em 3em}#header-classes + dl > dd{margin-bottom:3em}dd dd{margin-left:2em}dd p{margin:10px 0}.name{background:#eee;font-weight:bold;font-size:.85em;padding:5px 10px;display:inline-block;min-width:40%}.name:hover{background:#e0e0e0}dt:target .name{background:var(--highlight-color)}.name > span:first-child{white-space:nowrap}.name.class > span:nth-child(2){margin-left:.4em}.inherited{color:#999;border-left:5px solid #eee;padding-left:1em}.inheritance em{font-style:normal;font-weight:bold}.desc h2{font-weight:400;font-size:1.25em}.desc h3{font-size:1em}.desc dt code{background:inherit}.source summary,.git-link-div{color:#666;text-align:right;font-weight:400;font-size:.8em;text-transform:uppercase}.source summary > *{white-space:nowrap;cursor:pointer}.git-link{color:inherit;margin-left:1em}.source pre{max-height:500px;overflow:auto;margin:0}.source pre code{font-size:12px;overflow:visible}.hlist{list-style:none}.hlist li{display:inline}.hlist li:after{content:',\2002'}.hlist li:last-child:after{content:none}.hlist .hlist{display:inline;padding-left:1em}img{max-width:100%}td{padding:0 .5em}.admonition{padding:.1em .5em;margin-bottom:1em}.admonition-title{font-weight:bold}.admonition.note,.admonition.info,.admonition.important{background:#aef}.admonition.todo,.admonition.versionadded,.admonition.tip,.admonition.hint{background:#dfd}.admonition.warning,.admonition.versionchanged,.admonition.deprecated{background:#fd4}.admonition.error,.admonition.danger,.admonition.caution{background:lightpink}</style>
+<style media="screen and (min-width: 700px)">@media screen and (min-width:700px){#sidebar{width:30%;height:100vh;overflow:auto;position:sticky;top:0}#content{width:70%;max-width:100ch;padding:3em 4em;border-left:1px solid #ddd}pre code{font-size:1em}.item .name{font-size:1em}main{display:flex;flex-direction:row-reverse;justify-content:flex-end}.toc ul ul,#index ul{padding-left:1.5em}.toc > ul > li{margin-top:.5em}}</style>
+<style media="print">@media print{#sidebar h1{page-break-before:always}.source{display:none}}@media print{*{background:transparent !important;color:#000 !important;box-shadow:none !important;text-shadow:none !important}a[href]:after{content:" (" attr(href) ")";font-size:90%}a[href][title]:after{content:none}abbr[title]:after{content:" (" attr(title) ")"}.ir a:after,a[href^="javascript:"]:after,a[href^="#"]:after{content:""}pre,blockquote{border:1px solid #999;page-break-inside:avoid}thead{display:table-header-group}tr,img{page-break-inside:avoid}img{max-width:100% !important}@page{margin:0.5cm}p,h2,h3{orphans:3;widows:3}h1,h2,h3,h4,h5,h6{page-break-after:avoid}}</style>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js" integrity="sha256-Uv3H6lx7dJmRfRvH8TH6kJD1TSK1aFcwgx+mdg3epi8=" crossorigin></script>
+<script>window.addEventListener('DOMContentLoaded', () => hljs.initHighlighting())</script>
+</head>
+<body>
+<main>
+<article id="content">
+<header>
+<h1 class="title">Module <code>HasanSARMAN_PLAKA_OKUMA.modules.TestEasttext.TestEasttext</code></h1>
+</header>
+<section id="section-intro">
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">import errno
+import subprocess
+import time
+
+import cv2
+import pytesseract
+from PIL import Image
+
+from utils import Statics
+import itertools
+import os
+import platform
+import lsb_release
+from subprocess import STDOUT, check_call
+from timeit import default_timer as timer
+from imutils.object_detection import non_max_suppression
+import numpy as np
+from skimage.transform import resize,rescale
+
+from utils.UtilsGeneric import image_resize, clear_text
+
+
+class TestEasttext:
+    &#34;&#34;&#34;
+                This Module uses East Text area detector..(as a frozen graph)
+                in order to maximize the success ratio, i need at least 3000 pictures where the all checked by a HUMAN
+                after that retraining will give you more than 95% success ratio.
+                after finding text areas we will pass the areas to tesseract according tho top sizes..
+                our main goal in this module to help tesseract work better by dropping usesless areas.
+
+
+        &#34;&#34;&#34;
+    base_img=None
+    prepared_img=None
+    prepare_start_time = None
+    prepare_end_time = None
+    start_time = None
+    end_time = None
+    each_img_process_time = {}
+    run=1
+    using_gpu = 0
+    my_info = {}
+    model_usage = 0
+    mymodels = []
+    retrain = 0
+    newlinux=0
+    min_confidence=0.5
+    default_width=320
+    default_height=320
+    rW = 0
+    rH=0
+    layerNames = [
+        &#34;feature_fusion/Conv_7/Sigmoid&#34;,
+        &#34;feature_fusion/concat_3&#34;]
+    net=None
+    W=0
+    H=0
+    MY_RESULTS={}
+    def __init__(self, model_usage=0):
+
+        self.model_usage = model_usage
+
+        self.my_info[&#34;name&#34;] = self.__class__
+        self.my_info[&#34;using_gpu&#34;] = self.using_gpu
+        self.my_info[&#34;module_presentation&#34;] = self.__doc__
+        self.my_info[&#34;used models&#34;] = self.mymodels
+
+
+
+    def return_my_dict(self):
+        return self.my_info
+
+    def return_dict_with_results(self):
+        return self.my_info
+
+    def check_deps(self):
+        # first check version of linux.
+        try:
+            output_folder_name = &#39;INPUT_OUTPUT/outputs/&#39; + str(self.__class__.__name__)
+            os.makedirs(output_folder_name)
+        except OSError as e:
+            Statics.LOGGER.logme(str(self.__class__.__name__))+(str(e))
+
+    def start_main_timer(self):
+        start = timer()
+        self.start_time = start
+        self.MY_RESULTS[&#34;main_timer_start&#34;] = start
+
+    def end_main_timer(self):
+        end = timer()
+        self.end_time = end
+        self.MY_RESULTS[&#34;main_timer_end&#34;] = end
+
+    def prepare_img(self, imgx):
+        self.each_img_process_time[imgx] = {}
+        self.MY_RESULTS[imgx] = {}
+        start1 = timer()
+        self.each_img_process_time[imgx][&#34;prepare_start_&#34;] = start1
+        self.MY_RESULTS[imgx][&#34;prepare_start_&#34;]  = start1
+        # process
+        self.base_img = cv2.imread(imgx)
+        orig = self.base_img.copy()
+        #image_resized = cv2.resize(orig,width=320,interpolation=cv2.INTER_CUBIC)
+        image_resized=image = image_resize(orig, width = 320)
+        (H, W) = image_resized.shape[:2]
+        blank_image = np.zeros((self.default_width, self.default_height, 3), np.uint8)
+
+        blank_image[:, :] = (255, 255, 255)
+        blank_image[0: H, 0: W] = image_resized.copy()
+        # set the new width and height and then determine the ratio in change
+        # for both the width and height
+        blank_image = cv2.fastNlMeansDenoisingColored(blank_image, None, 10, 10, 7, 21)
+        #blank_image= cv2.adaptiveThreshold(blank_image, 255, cv2.ADAPTIVE_THRESH_GAUSSIAN_C, cv2.THRESH_BINARY, 31, 2)
+        img_gray = cv2.cvtColor(blank_image, cv2.COLOR_BGR2GRAY)
+        img_blur = cv2.medianBlur(img_gray, 5)
+        img_thresh_Gaussian = cv2.adaptiveThreshold(img_blur, 255,
+                                                    cv2.ADAPTIVE_THRESH_GAUSSIAN_C, cv2.THRESH_BINARY, 11, 2)
+        (thresh, blackAndWhiteImage) = cv2.threshold(img_thresh_Gaussian, 127, 255, cv2.THRESH_BINARY)
+
+        #kernel = np.array([[-1, -1, -1], [-1, 9, -1], [-1, -1, -1]])
+        #self.prepared_img = cv2.filter2D(blank_image, -1, kernel)
+        #self.prepared_img = cv2.cvtColor(self.prepared_img, cv2.COLOR_BGR2GRAY)
+
+        fake_rgb = cv2.cvtColor(blackAndWhiteImage, cv2.COLOR_GRAY2RGB)
+        copyx=fake_rgb.copy()
+        fake_gray=cv2.cvtColor(copyx,cv2.COLOR_BGR2GRAY)
+        contours, hier = cv2.findContours(fake_gray, cv2.RETR_LIST, cv2.CHAIN_APPROX_SIMPLE)
+        blank_image2 = np.zeros((self.default_width, self.default_height, 3), np.uint8)
+
+        blank_image2[:, :] = (255, 255, 255)
+        # we are going to use a simple trick in there ...
+
+        for cnt in contours:
+            if 200 &lt; cv2.contourArea(cnt) &lt; 5000:
+                cv2.drawContours(self.prepared_img, [cnt], 0, (0, 255, 0), 2)
+                cv2.drawContours(self.prepared_img, [cnt], 0, 255, -1)
+                cv2.drawContours(fake_gray, [cnt], 0, (0, 255, 0), 2)
+                cv2.drawContours(fake_gray, [cnt], 0, 255, -1)
+                x, y, w, h = cv2.boundingRect(cnt)
+                ROI = fake_rgb[y:y + h, x:x + w]
+                cloneimg=ROI.copy()
+                blank_image2[y:y + h, x:x + w]=cloneimg
+        cv2.imwrite(&#34;/tmp/&#34; + str(round(time.time() * 1000)) + &#34;.jpg&#34;,fake_rgb)
+        cv2.imwrite(&#34;/tmp/aq_&#34; + str(round(time.time() * 1000)) + &#34;.jpg&#34;, fake_gray)
+        cv2.imwrite(&#34;/tmp/blanker_&#34; + str(round(time.time() * 1000)) + &#34;.jpg&#34;, blank_image2)
+        self.prepared_img = blank_image2
+        (H, W) = blank_image.shape[:2]
+        self.H=H
+        self.W=W
+        end1 = timer()
+        self.each_img_process_time[imgx][&#34;prepare_end_&#34;] = end1
+        self.MY_RESULTS[imgx][&#34;prepare_end_&#34;] = end1
+
+    def prepare(self):
+        start = timer()
+        self.prepare_start_time = start
+        self.MY_RESULTS[&#34;prepare_start&#34;] = start
+        pth=os.getcwd()+&#34;/modules/&#34;+str(self.__class__.__name__)+&#34;/&#34;+&#34;frozen_east_text_detection.pb&#34;
+
+        self.net = cv2.dnn.readNet(pth)
+        end = timer()
+        self.prepare_end_time = end
+        self.MY_RESULTS[&#34;prepare_end&#34;] = end
+
+    def start_(self, imgx):
+
+        start1 = timer()
+        self.each_img_process_time[imgx][&#34;_start&#34;] = start1
+        self.MY_RESULTS[imgx][&#34;_start&#34;] = start1
+        # process
+        blob = cv2.dnn.blobFromImage(self.prepared_img, 1.0, (self.W, self.H),
+                                     (123.68, 116.78, 103.94), swapRB=True, crop=False)
+        self.net.setInput(blob)
+        (scores, geometry) = self.net.forward(self.layerNames)
+        (numRows, numCols) = scores.shape[2:4]
+
+        rects = []
+        confidences = []
+
+        # loop over the number of rows, check probability and check also scores
+        for y in range(0, numRows):
+
+            scoresData = scores[0, 0, y]
+            xData0 = geometry[0, 0, y]
+            xData1 = geometry[0, 1, y]
+            xData2 = geometry[0, 2, y]
+            xData3 = geometry[0, 3, y]
+            anglesData = geometry[0, 4, y]
+
+            for x in range(0, numCols):
+                # if our score does not have sufficient probability, ignore it
+                if scoresData[x] &lt; self.min_confidence:
+                    continue
+                # compute the offset factor as our resulting feature maps will
+                # be 4x smaller than the input image
+                (offsetX, offsetY) = (x * 4.0, y * 4.0)
+                # extract the rotation angle for the prediction and then
+                # compute the sin and cosine
+                angle = anglesData[x]
+                cos = np.cos(angle)
+                sin = np.sin(angle)
+                # use the geometry volume to derive the width and height of
+                # the bounding box
+                h = xData0[x] + xData2[x]
+                w = xData1[x] + xData3[x]
+                # compute both the starting and ending (x, y)-coordinates for
+                # the text prediction bounding box
+                endX = int(offsetX + (cos * xData1[x]) + (sin * xData2[x]))
+                endY = int(offsetY - (sin * xData1[x]) + (cos * xData2[x]))
+                startX = int(endX - w)
+                startY = int(endY - h)
+                # add the bounding box coordinates and probability score to
+                # our respective lists
+                rects.append((startX, startY, endX, endY))
+                confidences.append(scoresData[x])
+        boxes = non_max_suppression(np.array(rects), probs=confidences)
+        # loop over the bounding boxes
+        cp_img=self.prepared_img.copy()
+        for (startX, startY, endX, endY) in boxes:
+            # scale the bounding box coordinates based on the respective
+            # ratios
+            #startX = int(startX * self.rW)
+            #startY = int(startY * self.rH)
+            #endX = int(endX * self.rW)
+            #endY = int(endY * self.rH)
+
+            # extract the actual padded ROI
+            roi = self.prepared_img[startY:endY, startX:endX]
+            # draw the bounding box on the image
+            cv2.rectangle(self.prepared_img, (startX, startY), (endX, endY), (0, 255, 0), 2)
+        predicted_result = pytesseract.image_to_string(cp_img, lang=&#39;eng&#39;,
+                                                       config=&#39;--oem 1 --psm 6 -c tessedit_char_whitelist=ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789&#39;)
+
+        filter_predicted_result = &#34;&#34;.join(predicted_result.split()).replace(&#34;:&#34;, &#34;&#34;).replace(&#34;-&#34;, &#34;&#34;).replace(&#34;_&#34;, &#34;&#34;).replace(&#34; &#34;, &#34;&#34;)
+        cleared_text=clear_text(filter_predicted_result)
+        self.MY_RESULTS[imgx][&#34;result&#34;]=cleared_text
+        self.MY_RESULTS[imgx][&#34;dirty_result&#34;] = filter_predicted_result
+        Statics.LOGGER.logme(str(self.__class__.__name__)+&#34; =&gt; &#34;+imgx + &#34; -&gt; &#34; + filter_predicted_result)
+        cv2.imwrite(imgx.replace(&#39;/img/&#39;,(&#39;/outputs/&#39;+str(self.__class__.__name__))+&#34;/&#34;) , self.prepared_img)
+        end1 = timer()
+        self.each_img_process_time[imgx][&#34;_end&#34;] = end1
+        self.MY_RESULTS[imgx][&#34;_end&#34;] = end1</code></pre>
+</details>
+</section>
+<section>
+</section>
+<section>
+</section>
+<section>
+</section>
+<section>
+<h2 class="section-title" id="header-classes">Classes</h2>
+<dl>
+<dt id="HasanSARMAN_PLAKA_OKUMA.modules.TestEasttext.TestEasttext.TestEasttext"><code class="flex name class">
+<span>class <span class="ident">TestEasttext</span></span>
+<span>(</span><span>model_usage=0)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>This Module uses East Text area detector..(as a frozen graph)
+in order to maximize the success ratio, i need at least 3000 pictures where the all checked by a HUMAN
+after that retraining will give you more than 95% success ratio.
+after finding text areas we will pass the areas to tesseract according tho top sizes..
+our main goal in this module to help tesseract work better by dropping usesless areas.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">class TestEasttext:
+    &#34;&#34;&#34;
+                This Module uses East Text area detector..(as a frozen graph)
+                in order to maximize the success ratio, i need at least 3000 pictures where the all checked by a HUMAN
+                after that retraining will give you more than 95% success ratio.
+                after finding text areas we will pass the areas to tesseract according tho top sizes..
+                our main goal in this module to help tesseract work better by dropping usesless areas.
+
+
+        &#34;&#34;&#34;
+    base_img=None
+    prepared_img=None
+    prepare_start_time = None
+    prepare_end_time = None
+    start_time = None
+    end_time = None
+    each_img_process_time = {}
+    run=1
+    using_gpu = 0
+    my_info = {}
+    model_usage = 0
+    mymodels = []
+    retrain = 0
+    newlinux=0
+    min_confidence=0.5
+    default_width=320
+    default_height=320
+    rW = 0
+    rH=0
+    layerNames = [
+        &#34;feature_fusion/Conv_7/Sigmoid&#34;,
+        &#34;feature_fusion/concat_3&#34;]
+    net=None
+    W=0
+    H=0
+    MY_RESULTS={}
+    def __init__(self, model_usage=0):
+
+        self.model_usage = model_usage
+
+        self.my_info[&#34;name&#34;] = self.__class__
+        self.my_info[&#34;using_gpu&#34;] = self.using_gpu
+        self.my_info[&#34;module_presentation&#34;] = self.__doc__
+        self.my_info[&#34;used models&#34;] = self.mymodels
+
+
+
+    def return_my_dict(self):
+        return self.my_info
+
+    def return_dict_with_results(self):
+        return self.my_info
+
+    def check_deps(self):
+        # first check version of linux.
+        try:
+            output_folder_name = &#39;INPUT_OUTPUT/outputs/&#39; + str(self.__class__.__name__)
+            os.makedirs(output_folder_name)
+        except OSError as e:
+            Statics.LOGGER.logme(str(self.__class__.__name__))+(str(e))
+
+    def start_main_timer(self):
+        start = timer()
+        self.start_time = start
+        self.MY_RESULTS[&#34;main_timer_start&#34;] = start
+
+    def end_main_timer(self):
+        end = timer()
+        self.end_time = end
+        self.MY_RESULTS[&#34;main_timer_end&#34;] = end
+
+    def prepare_img(self, imgx):
+        self.each_img_process_time[imgx] = {}
+        self.MY_RESULTS[imgx] = {}
+        start1 = timer()
+        self.each_img_process_time[imgx][&#34;prepare_start_&#34;] = start1
+        self.MY_RESULTS[imgx][&#34;prepare_start_&#34;]  = start1
+        # process
+        self.base_img = cv2.imread(imgx)
+        orig = self.base_img.copy()
+        #image_resized = cv2.resize(orig,width=320,interpolation=cv2.INTER_CUBIC)
+        image_resized=image = image_resize(orig, width = 320)
+        (H, W) = image_resized.shape[:2]
+        blank_image = np.zeros((self.default_width, self.default_height, 3), np.uint8)
+
+        blank_image[:, :] = (255, 255, 255)
+        blank_image[0: H, 0: W] = image_resized.copy()
+        # set the new width and height and then determine the ratio in change
+        # for both the width and height
+        blank_image = cv2.fastNlMeansDenoisingColored(blank_image, None, 10, 10, 7, 21)
+        #blank_image= cv2.adaptiveThreshold(blank_image, 255, cv2.ADAPTIVE_THRESH_GAUSSIAN_C, cv2.THRESH_BINARY, 31, 2)
+        img_gray = cv2.cvtColor(blank_image, cv2.COLOR_BGR2GRAY)
+        img_blur = cv2.medianBlur(img_gray, 5)
+        img_thresh_Gaussian = cv2.adaptiveThreshold(img_blur, 255,
+                                                    cv2.ADAPTIVE_THRESH_GAUSSIAN_C, cv2.THRESH_BINARY, 11, 2)
+        (thresh, blackAndWhiteImage) = cv2.threshold(img_thresh_Gaussian, 127, 255, cv2.THRESH_BINARY)
+
+        #kernel = np.array([[-1, -1, -1], [-1, 9, -1], [-1, -1, -1]])
+        #self.prepared_img = cv2.filter2D(blank_image, -1, kernel)
+        #self.prepared_img = cv2.cvtColor(self.prepared_img, cv2.COLOR_BGR2GRAY)
+
+        fake_rgb = cv2.cvtColor(blackAndWhiteImage, cv2.COLOR_GRAY2RGB)
+        copyx=fake_rgb.copy()
+        fake_gray=cv2.cvtColor(copyx,cv2.COLOR_BGR2GRAY)
+        contours, hier = cv2.findContours(fake_gray, cv2.RETR_LIST, cv2.CHAIN_APPROX_SIMPLE)
+        blank_image2 = np.zeros((self.default_width, self.default_height, 3), np.uint8)
+
+        blank_image2[:, :] = (255, 255, 255)
+        # we are going to use a simple trick in there ...
+
+        for cnt in contours:
+            if 200 &lt; cv2.contourArea(cnt) &lt; 5000:
+                cv2.drawContours(self.prepared_img, [cnt], 0, (0, 255, 0), 2)
+                cv2.drawContours(self.prepared_img, [cnt], 0, 255, -1)
+                cv2.drawContours(fake_gray, [cnt], 0, (0, 255, 0), 2)
+                cv2.drawContours(fake_gray, [cnt], 0, 255, -1)
+                x, y, w, h = cv2.boundingRect(cnt)
+                ROI = fake_rgb[y:y + h, x:x + w]
+                cloneimg=ROI.copy()
+                blank_image2[y:y + h, x:x + w]=cloneimg
+        cv2.imwrite(&#34;/tmp/&#34; + str(round(time.time() * 1000)) + &#34;.jpg&#34;,fake_rgb)
+        cv2.imwrite(&#34;/tmp/aq_&#34; + str(round(time.time() * 1000)) + &#34;.jpg&#34;, fake_gray)
+        cv2.imwrite(&#34;/tmp/blanker_&#34; + str(round(time.time() * 1000)) + &#34;.jpg&#34;, blank_image2)
+        self.prepared_img = blank_image2
+        (H, W) = blank_image.shape[:2]
+        self.H=H
+        self.W=W
+        end1 = timer()
+        self.each_img_process_time[imgx][&#34;prepare_end_&#34;] = end1
+        self.MY_RESULTS[imgx][&#34;prepare_end_&#34;] = end1
+
+    def prepare(self):
+        start = timer()
+        self.prepare_start_time = start
+        self.MY_RESULTS[&#34;prepare_start&#34;] = start
+        pth=os.getcwd()+&#34;/modules/&#34;+str(self.__class__.__name__)+&#34;/&#34;+&#34;frozen_east_text_detection.pb&#34;
+
+        self.net = cv2.dnn.readNet(pth)
+        end = timer()
+        self.prepare_end_time = end
+        self.MY_RESULTS[&#34;prepare_end&#34;] = end
+
+    def start_(self, imgx):
+
+        start1 = timer()
+        self.each_img_process_time[imgx][&#34;_start&#34;] = start1
+        self.MY_RESULTS[imgx][&#34;_start&#34;] = start1
+        # process
+        blob = cv2.dnn.blobFromImage(self.prepared_img, 1.0, (self.W, self.H),
+                                     (123.68, 116.78, 103.94), swapRB=True, crop=False)
+        self.net.setInput(blob)
+        (scores, geometry) = self.net.forward(self.layerNames)
+        (numRows, numCols) = scores.shape[2:4]
+
+        rects = []
+        confidences = []
+
+        # loop over the number of rows, check probability and check also scores
+        for y in range(0, numRows):
+
+            scoresData = scores[0, 0, y]
+            xData0 = geometry[0, 0, y]
+            xData1 = geometry[0, 1, y]
+            xData2 = geometry[0, 2, y]
+            xData3 = geometry[0, 3, y]
+            anglesData = geometry[0, 4, y]
+
+            for x in range(0, numCols):
+                # if our score does not have sufficient probability, ignore it
+                if scoresData[x] &lt; self.min_confidence:
+                    continue
+                # compute the offset factor as our resulting feature maps will
+                # be 4x smaller than the input image
+                (offsetX, offsetY) = (x * 4.0, y * 4.0)
+                # extract the rotation angle for the prediction and then
+                # compute the sin and cosine
+                angle = anglesData[x]
+                cos = np.cos(angle)
+                sin = np.sin(angle)
+                # use the geometry volume to derive the width and height of
+                # the bounding box
+                h = xData0[x] + xData2[x]
+                w = xData1[x] + xData3[x]
+                # compute both the starting and ending (x, y)-coordinates for
+                # the text prediction bounding box
+                endX = int(offsetX + (cos * xData1[x]) + (sin * xData2[x]))
+                endY = int(offsetY - (sin * xData1[x]) + (cos * xData2[x]))
+                startX = int(endX - w)
+                startY = int(endY - h)
+                # add the bounding box coordinates and probability score to
+                # our respective lists
+                rects.append((startX, startY, endX, endY))
+                confidences.append(scoresData[x])
+        boxes = non_max_suppression(np.array(rects), probs=confidences)
+        # loop over the bounding boxes
+        cp_img=self.prepared_img.copy()
+        for (startX, startY, endX, endY) in boxes:
+            # scale the bounding box coordinates based on the respective
+            # ratios
+            #startX = int(startX * self.rW)
+            #startY = int(startY * self.rH)
+            #endX = int(endX * self.rW)
+            #endY = int(endY * self.rH)
+
+            # extract the actual padded ROI
+            roi = self.prepared_img[startY:endY, startX:endX]
+            # draw the bounding box on the image
+            cv2.rectangle(self.prepared_img, (startX, startY), (endX, endY), (0, 255, 0), 2)
+        predicted_result = pytesseract.image_to_string(cp_img, lang=&#39;eng&#39;,
+                                                       config=&#39;--oem 1 --psm 6 -c tessedit_char_whitelist=ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789&#39;)
+
+        filter_predicted_result = &#34;&#34;.join(predicted_result.split()).replace(&#34;:&#34;, &#34;&#34;).replace(&#34;-&#34;, &#34;&#34;).replace(&#34;_&#34;, &#34;&#34;).replace(&#34; &#34;, &#34;&#34;)
+        cleared_text=clear_text(filter_predicted_result)
+        self.MY_RESULTS[imgx][&#34;result&#34;]=cleared_text
+        self.MY_RESULTS[imgx][&#34;dirty_result&#34;] = filter_predicted_result
+        Statics.LOGGER.logme(str(self.__class__.__name__)+&#34; =&gt; &#34;+imgx + &#34; -&gt; &#34; + filter_predicted_result)
+        cv2.imwrite(imgx.replace(&#39;/img/&#39;,(&#39;/outputs/&#39;+str(self.__class__.__name__))+&#34;/&#34;) , self.prepared_img)
+        end1 = timer()
+        self.each_img_process_time[imgx][&#34;_end&#34;] = end1
+        self.MY_RESULTS[imgx][&#34;_end&#34;] = end1</code></pre>
+</details>
+<h3>Class variables</h3>
+<dl>
+<dt id="HasanSARMAN_PLAKA_OKUMA.modules.TestEasttext.TestEasttext.TestEasttext.H"><code class="name">var <span class="ident">H</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="HasanSARMAN_PLAKA_OKUMA.modules.TestEasttext.TestEasttext.TestEasttext.MY_RESULTS"><code class="name">var <span class="ident">MY_RESULTS</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="HasanSARMAN_PLAKA_OKUMA.modules.TestEasttext.TestEasttext.TestEasttext.W"><code class="name">var <span class="ident">W</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="HasanSARMAN_PLAKA_OKUMA.modules.TestEasttext.TestEasttext.TestEasttext.base_img"><code class="name">var <span class="ident">base_img</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="HasanSARMAN_PLAKA_OKUMA.modules.TestEasttext.TestEasttext.TestEasttext.default_height"><code class="name">var <span class="ident">default_height</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="HasanSARMAN_PLAKA_OKUMA.modules.TestEasttext.TestEasttext.TestEasttext.default_width"><code class="name">var <span class="ident">default_width</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="HasanSARMAN_PLAKA_OKUMA.modules.TestEasttext.TestEasttext.TestEasttext.each_img_process_time"><code class="name">var <span class="ident">each_img_process_time</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="HasanSARMAN_PLAKA_OKUMA.modules.TestEasttext.TestEasttext.TestEasttext.end_time"><code class="name">var <span class="ident">end_time</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="HasanSARMAN_PLAKA_OKUMA.modules.TestEasttext.TestEasttext.TestEasttext.layerNames"><code class="name">var <span class="ident">layerNames</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="HasanSARMAN_PLAKA_OKUMA.modules.TestEasttext.TestEasttext.TestEasttext.min_confidence"><code class="name">var <span class="ident">min_confidence</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="HasanSARMAN_PLAKA_OKUMA.modules.TestEasttext.TestEasttext.TestEasttext.model_usage"><code class="name">var <span class="ident">model_usage</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="HasanSARMAN_PLAKA_OKUMA.modules.TestEasttext.TestEasttext.TestEasttext.my_info"><code class="name">var <span class="ident">my_info</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="HasanSARMAN_PLAKA_OKUMA.modules.TestEasttext.TestEasttext.TestEasttext.mymodels"><code class="name">var <span class="ident">mymodels</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="HasanSARMAN_PLAKA_OKUMA.modules.TestEasttext.TestEasttext.TestEasttext.net"><code class="name">var <span class="ident">net</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="HasanSARMAN_PLAKA_OKUMA.modules.TestEasttext.TestEasttext.TestEasttext.newlinux"><code class="name">var <span class="ident">newlinux</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="HasanSARMAN_PLAKA_OKUMA.modules.TestEasttext.TestEasttext.TestEasttext.prepare_end_time"><code class="name">var <span class="ident">prepare_end_time</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="HasanSARMAN_PLAKA_OKUMA.modules.TestEasttext.TestEasttext.TestEasttext.prepare_start_time"><code class="name">var <span class="ident">prepare_start_time</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="HasanSARMAN_PLAKA_OKUMA.modules.TestEasttext.TestEasttext.TestEasttext.prepared_img"><code class="name">var <span class="ident">prepared_img</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="HasanSARMAN_PLAKA_OKUMA.modules.TestEasttext.TestEasttext.TestEasttext.rH"><code class="name">var <span class="ident">rH</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="HasanSARMAN_PLAKA_OKUMA.modules.TestEasttext.TestEasttext.TestEasttext.rW"><code class="name">var <span class="ident">rW</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="HasanSARMAN_PLAKA_OKUMA.modules.TestEasttext.TestEasttext.TestEasttext.retrain"><code class="name">var <span class="ident">retrain</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="HasanSARMAN_PLAKA_OKUMA.modules.TestEasttext.TestEasttext.TestEasttext.run"><code class="name">var <span class="ident">run</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="HasanSARMAN_PLAKA_OKUMA.modules.TestEasttext.TestEasttext.TestEasttext.start_time"><code class="name">var <span class="ident">start_time</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="HasanSARMAN_PLAKA_OKUMA.modules.TestEasttext.TestEasttext.TestEasttext.using_gpu"><code class="name">var <span class="ident">using_gpu</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+</dl>
+<h3>Methods</h3>
+<dl>
+<dt id="HasanSARMAN_PLAKA_OKUMA.modules.TestEasttext.TestEasttext.TestEasttext.check_deps"><code class="name flex">
+<span>def <span class="ident">check_deps</span></span>(<span>self)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def check_deps(self):
+    # first check version of linux.
+    try:
+        output_folder_name = &#39;INPUT_OUTPUT/outputs/&#39; + str(self.__class__.__name__)
+        os.makedirs(output_folder_name)
+    except OSError as e:
+        Statics.LOGGER.logme(str(self.__class__.__name__))+(str(e))</code></pre>
+</details>
+</dd>
+<dt id="HasanSARMAN_PLAKA_OKUMA.modules.TestEasttext.TestEasttext.TestEasttext.end_main_timer"><code class="name flex">
+<span>def <span class="ident">end_main_timer</span></span>(<span>self)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def end_main_timer(self):
+    end = timer()
+    self.end_time = end
+    self.MY_RESULTS[&#34;main_timer_end&#34;] = end</code></pre>
+</details>
+</dd>
+<dt id="HasanSARMAN_PLAKA_OKUMA.modules.TestEasttext.TestEasttext.TestEasttext.prepare"><code class="name flex">
+<span>def <span class="ident">prepare</span></span>(<span>self)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def prepare(self):
+    start = timer()
+    self.prepare_start_time = start
+    self.MY_RESULTS[&#34;prepare_start&#34;] = start
+    pth=os.getcwd()+&#34;/modules/&#34;+str(self.__class__.__name__)+&#34;/&#34;+&#34;frozen_east_text_detection.pb&#34;
+
+    self.net = cv2.dnn.readNet(pth)
+    end = timer()
+    self.prepare_end_time = end
+    self.MY_RESULTS[&#34;prepare_end&#34;] = end</code></pre>
+</details>
+</dd>
+<dt id="HasanSARMAN_PLAKA_OKUMA.modules.TestEasttext.TestEasttext.TestEasttext.prepare_img"><code class="name flex">
+<span>def <span class="ident">prepare_img</span></span>(<span>self, imgx)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def prepare_img(self, imgx):
+    self.each_img_process_time[imgx] = {}
+    self.MY_RESULTS[imgx] = {}
+    start1 = timer()
+    self.each_img_process_time[imgx][&#34;prepare_start_&#34;] = start1
+    self.MY_RESULTS[imgx][&#34;prepare_start_&#34;]  = start1
+    # process
+    self.base_img = cv2.imread(imgx)
+    orig = self.base_img.copy()
+    #image_resized = cv2.resize(orig,width=320,interpolation=cv2.INTER_CUBIC)
+    image_resized=image = image_resize(orig, width = 320)
+    (H, W) = image_resized.shape[:2]
+    blank_image = np.zeros((self.default_width, self.default_height, 3), np.uint8)
+
+    blank_image[:, :] = (255, 255, 255)
+    blank_image[0: H, 0: W] = image_resized.copy()
+    # set the new width and height and then determine the ratio in change
+    # for both the width and height
+    blank_image = cv2.fastNlMeansDenoisingColored(blank_image, None, 10, 10, 7, 21)
+    #blank_image= cv2.adaptiveThreshold(blank_image, 255, cv2.ADAPTIVE_THRESH_GAUSSIAN_C, cv2.THRESH_BINARY, 31, 2)
+    img_gray = cv2.cvtColor(blank_image, cv2.COLOR_BGR2GRAY)
+    img_blur = cv2.medianBlur(img_gray, 5)
+    img_thresh_Gaussian = cv2.adaptiveThreshold(img_blur, 255,
+                                                cv2.ADAPTIVE_THRESH_GAUSSIAN_C, cv2.THRESH_BINARY, 11, 2)
+    (thresh, blackAndWhiteImage) = cv2.threshold(img_thresh_Gaussian, 127, 255, cv2.THRESH_BINARY)
+
+    #kernel = np.array([[-1, -1, -1], [-1, 9, -1], [-1, -1, -1]])
+    #self.prepared_img = cv2.filter2D(blank_image, -1, kernel)
+    #self.prepared_img = cv2.cvtColor(self.prepared_img, cv2.COLOR_BGR2GRAY)
+
+    fake_rgb = cv2.cvtColor(blackAndWhiteImage, cv2.COLOR_GRAY2RGB)
+    copyx=fake_rgb.copy()
+    fake_gray=cv2.cvtColor(copyx,cv2.COLOR_BGR2GRAY)
+    contours, hier = cv2.findContours(fake_gray, cv2.RETR_LIST, cv2.CHAIN_APPROX_SIMPLE)
+    blank_image2 = np.zeros((self.default_width, self.default_height, 3), np.uint8)
+
+    blank_image2[:, :] = (255, 255, 255)
+    # we are going to use a simple trick in there ...
+
+    for cnt in contours:
+        if 200 &lt; cv2.contourArea(cnt) &lt; 5000:
+            cv2.drawContours(self.prepared_img, [cnt], 0, (0, 255, 0), 2)
+            cv2.drawContours(self.prepared_img, [cnt], 0, 255, -1)
+            cv2.drawContours(fake_gray, [cnt], 0, (0, 255, 0), 2)
+            cv2.drawContours(fake_gray, [cnt], 0, 255, -1)
+            x, y, w, h = cv2.boundingRect(cnt)
+            ROI = fake_rgb[y:y + h, x:x + w]
+            cloneimg=ROI.copy()
+            blank_image2[y:y + h, x:x + w]=cloneimg
+    cv2.imwrite(&#34;/tmp/&#34; + str(round(time.time() * 1000)) + &#34;.jpg&#34;,fake_rgb)
+    cv2.imwrite(&#34;/tmp/aq_&#34; + str(round(time.time() * 1000)) + &#34;.jpg&#34;, fake_gray)
+    cv2.imwrite(&#34;/tmp/blanker_&#34; + str(round(time.time() * 1000)) + &#34;.jpg&#34;, blank_image2)
+    self.prepared_img = blank_image2
+    (H, W) = blank_image.shape[:2]
+    self.H=H
+    self.W=W
+    end1 = timer()
+    self.each_img_process_time[imgx][&#34;prepare_end_&#34;] = end1
+    self.MY_RESULTS[imgx][&#34;prepare_end_&#34;] = end1</code></pre>
+</details>
+</dd>
+<dt id="HasanSARMAN_PLAKA_OKUMA.modules.TestEasttext.TestEasttext.TestEasttext.return_dict_with_results"><code class="name flex">
+<span>def <span class="ident">return_dict_with_results</span></span>(<span>self)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def return_dict_with_results(self):
+    return self.my_info</code></pre>
+</details>
+</dd>
+<dt id="HasanSARMAN_PLAKA_OKUMA.modules.TestEasttext.TestEasttext.TestEasttext.return_my_dict"><code class="name flex">
+<span>def <span class="ident">return_my_dict</span></span>(<span>self)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def return_my_dict(self):
+    return self.my_info</code></pre>
+</details>
+</dd>
+<dt id="HasanSARMAN_PLAKA_OKUMA.modules.TestEasttext.TestEasttext.TestEasttext.start_"><code class="name flex">
+<span>def <span class="ident">start_</span></span>(<span>self, imgx)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def start_(self, imgx):
+
+    start1 = timer()
+    self.each_img_process_time[imgx][&#34;_start&#34;] = start1
+    self.MY_RESULTS[imgx][&#34;_start&#34;] = start1
+    # process
+    blob = cv2.dnn.blobFromImage(self.prepared_img, 1.0, (self.W, self.H),
+                                 (123.68, 116.78, 103.94), swapRB=True, crop=False)
+    self.net.setInput(blob)
+    (scores, geometry) = self.net.forward(self.layerNames)
+    (numRows, numCols) = scores.shape[2:4]
+
+    rects = []
+    confidences = []
+
+    # loop over the number of rows, check probability and check also scores
+    for y in range(0, numRows):
+
+        scoresData = scores[0, 0, y]
+        xData0 = geometry[0, 0, y]
+        xData1 = geometry[0, 1, y]
+        xData2 = geometry[0, 2, y]
+        xData3 = geometry[0, 3, y]
+        anglesData = geometry[0, 4, y]
+
+        for x in range(0, numCols):
+            # if our score does not have sufficient probability, ignore it
+            if scoresData[x] &lt; self.min_confidence:
+                continue
+            # compute the offset factor as our resulting feature maps will
+            # be 4x smaller than the input image
+            (offsetX, offsetY) = (x * 4.0, y * 4.0)
+            # extract the rotation angle for the prediction and then
+            # compute the sin and cosine
+            angle = anglesData[x]
+            cos = np.cos(angle)
+            sin = np.sin(angle)
+            # use the geometry volume to derive the width and height of
+            # the bounding box
+            h = xData0[x] + xData2[x]
+            w = xData1[x] + xData3[x]
+            # compute both the starting and ending (x, y)-coordinates for
+            # the text prediction bounding box
+            endX = int(offsetX + (cos * xData1[x]) + (sin * xData2[x]))
+            endY = int(offsetY - (sin * xData1[x]) + (cos * xData2[x]))
+            startX = int(endX - w)
+            startY = int(endY - h)
+            # add the bounding box coordinates and probability score to
+            # our respective lists
+            rects.append((startX, startY, endX, endY))
+            confidences.append(scoresData[x])
+    boxes = non_max_suppression(np.array(rects), probs=confidences)
+    # loop over the bounding boxes
+    cp_img=self.prepared_img.copy()
+    for (startX, startY, endX, endY) in boxes:
+        # scale the bounding box coordinates based on the respective
+        # ratios
+        #startX = int(startX * self.rW)
+        #startY = int(startY * self.rH)
+        #endX = int(endX * self.rW)
+        #endY = int(endY * self.rH)
+
+        # extract the actual padded ROI
+        roi = self.prepared_img[startY:endY, startX:endX]
+        # draw the bounding box on the image
+        cv2.rectangle(self.prepared_img, (startX, startY), (endX, endY), (0, 255, 0), 2)
+    predicted_result = pytesseract.image_to_string(cp_img, lang=&#39;eng&#39;,
+                                                   config=&#39;--oem 1 --psm 6 -c tessedit_char_whitelist=ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789&#39;)
+
+    filter_predicted_result = &#34;&#34;.join(predicted_result.split()).replace(&#34;:&#34;, &#34;&#34;).replace(&#34;-&#34;, &#34;&#34;).replace(&#34;_&#34;, &#34;&#34;).replace(&#34; &#34;, &#34;&#34;)
+    cleared_text=clear_text(filter_predicted_result)
+    self.MY_RESULTS[imgx][&#34;result&#34;]=cleared_text
+    self.MY_RESULTS[imgx][&#34;dirty_result&#34;] = filter_predicted_result
+    Statics.LOGGER.logme(str(self.__class__.__name__)+&#34; =&gt; &#34;+imgx + &#34; -&gt; &#34; + filter_predicted_result)
+    cv2.imwrite(imgx.replace(&#39;/img/&#39;,(&#39;/outputs/&#39;+str(self.__class__.__name__))+&#34;/&#34;) , self.prepared_img)
+    end1 = timer()
+    self.each_img_process_time[imgx][&#34;_end&#34;] = end1
+    self.MY_RESULTS[imgx][&#34;_end&#34;] = end1</code></pre>
+</details>
+</dd>
+<dt id="HasanSARMAN_PLAKA_OKUMA.modules.TestEasttext.TestEasttext.TestEasttext.start_main_timer"><code class="name flex">
+<span>def <span class="ident">start_main_timer</span></span>(<span>self)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def start_main_timer(self):
+    start = timer()
+    self.start_time = start
+    self.MY_RESULTS[&#34;main_timer_start&#34;] = start</code></pre>
+</details>
+</dd>
+</dl>
+</dd>
+</dl>
+</section>
+</article>
+<nav id="sidebar">
+<h1>Index</h1>
+<div class="toc">
+<ul></ul>
+</div>
+<ul id="index">
+<li><h3>Super-module</h3>
+<ul>
+<li><code><a title="HasanSARMAN_PLAKA_OKUMA.modules.TestEasttext" href="index.html">HasanSARMAN_PLAKA_OKUMA.modules.TestEasttext</a></code></li>
+</ul>
+</li>
+<li><h3><a href="#header-classes">Classes</a></h3>
+<ul>
+<li>
+<h4><code><a title="HasanSARMAN_PLAKA_OKUMA.modules.TestEasttext.TestEasttext.TestEasttext" href="#HasanSARMAN_PLAKA_OKUMA.modules.TestEasttext.TestEasttext.TestEasttext">TestEasttext</a></code></h4>
+<ul class="">
+<li><code><a title="HasanSARMAN_PLAKA_OKUMA.modules.TestEasttext.TestEasttext.TestEasttext.H" href="#HasanSARMAN_PLAKA_OKUMA.modules.TestEasttext.TestEasttext.TestEasttext.H">H</a></code></li>
+<li><code><a title="HasanSARMAN_PLAKA_OKUMA.modules.TestEasttext.TestEasttext.TestEasttext.MY_RESULTS" href="#HasanSARMAN_PLAKA_OKUMA.modules.TestEasttext.TestEasttext.TestEasttext.MY_RESULTS">MY_RESULTS</a></code></li>
+<li><code><a title="HasanSARMAN_PLAKA_OKUMA.modules.TestEasttext.TestEasttext.TestEasttext.W" href="#HasanSARMAN_PLAKA_OKUMA.modules.TestEasttext.TestEasttext.TestEasttext.W">W</a></code></li>
+<li><code><a title="HasanSARMAN_PLAKA_OKUMA.modules.TestEasttext.TestEasttext.TestEasttext.base_img" href="#HasanSARMAN_PLAKA_OKUMA.modules.TestEasttext.TestEasttext.TestEasttext.base_img">base_img</a></code></li>
+<li><code><a title="HasanSARMAN_PLAKA_OKUMA.modules.TestEasttext.TestEasttext.TestEasttext.check_deps" href="#HasanSARMAN_PLAKA_OKUMA.modules.TestEasttext.TestEasttext.TestEasttext.check_deps">check_deps</a></code></li>
+<li><code><a title="HasanSARMAN_PLAKA_OKUMA.modules.TestEasttext.TestEasttext.TestEasttext.default_height" href="#HasanSARMAN_PLAKA_OKUMA.modules.TestEasttext.TestEasttext.TestEasttext.default_height">default_height</a></code></li>
+<li><code><a title="HasanSARMAN_PLAKA_OKUMA.modules.TestEasttext.TestEasttext.TestEasttext.default_width" href="#HasanSARMAN_PLAKA_OKUMA.modules.TestEasttext.TestEasttext.TestEasttext.default_width">default_width</a></code></li>
+<li><code><a title="HasanSARMAN_PLAKA_OKUMA.modules.TestEasttext.TestEasttext.TestEasttext.each_img_process_time" href="#HasanSARMAN_PLAKA_OKUMA.modules.TestEasttext.TestEasttext.TestEasttext.each_img_process_time">each_img_process_time</a></code></li>
+<li><code><a title="HasanSARMAN_PLAKA_OKUMA.modules.TestEasttext.TestEasttext.TestEasttext.end_main_timer" href="#HasanSARMAN_PLAKA_OKUMA.modules.TestEasttext.TestEasttext.TestEasttext.end_main_timer">end_main_timer</a></code></li>
+<li><code><a title="HasanSARMAN_PLAKA_OKUMA.modules.TestEasttext.TestEasttext.TestEasttext.end_time" href="#HasanSARMAN_PLAKA_OKUMA.modules.TestEasttext.TestEasttext.TestEasttext.end_time">end_time</a></code></li>
+<li><code><a title="HasanSARMAN_PLAKA_OKUMA.modules.TestEasttext.TestEasttext.TestEasttext.layerNames" href="#HasanSARMAN_PLAKA_OKUMA.modules.TestEasttext.TestEasttext.TestEasttext.layerNames">layerNames</a></code></li>
+<li><code><a title="HasanSARMAN_PLAKA_OKUMA.modules.TestEasttext.TestEasttext.TestEasttext.min_confidence" href="#HasanSARMAN_PLAKA_OKUMA.modules.TestEasttext.TestEasttext.TestEasttext.min_confidence">min_confidence</a></code></li>
+<li><code><a title="HasanSARMAN_PLAKA_OKUMA.modules.TestEasttext.TestEasttext.TestEasttext.model_usage" href="#HasanSARMAN_PLAKA_OKUMA.modules.TestEasttext.TestEasttext.TestEasttext.model_usage">model_usage</a></code></li>
+<li><code><a title="HasanSARMAN_PLAKA_OKUMA.modules.TestEasttext.TestEasttext.TestEasttext.my_info" href="#HasanSARMAN_PLAKA_OKUMA.modules.TestEasttext.TestEasttext.TestEasttext.my_info">my_info</a></code></li>
+<li><code><a title="HasanSARMAN_PLAKA_OKUMA.modules.TestEasttext.TestEasttext.TestEasttext.mymodels" href="#HasanSARMAN_PLAKA_OKUMA.modules.TestEasttext.TestEasttext.TestEasttext.mymodels">mymodels</a></code></li>
+<li><code><a title="HasanSARMAN_PLAKA_OKUMA.modules.TestEasttext.TestEasttext.TestEasttext.net" href="#HasanSARMAN_PLAKA_OKUMA.modules.TestEasttext.TestEasttext.TestEasttext.net">net</a></code></li>
+<li><code><a title="HasanSARMAN_PLAKA_OKUMA.modules.TestEasttext.TestEasttext.TestEasttext.newlinux" href="#HasanSARMAN_PLAKA_OKUMA.modules.TestEasttext.TestEasttext.TestEasttext.newlinux">newlinux</a></code></li>
+<li><code><a title="HasanSARMAN_PLAKA_OKUMA.modules.TestEasttext.TestEasttext.TestEasttext.prepare" href="#HasanSARMAN_PLAKA_OKUMA.modules.TestEasttext.TestEasttext.TestEasttext.prepare">prepare</a></code></li>
+<li><code><a title="HasanSARMAN_PLAKA_OKUMA.modules.TestEasttext.TestEasttext.TestEasttext.prepare_end_time" href="#HasanSARMAN_PLAKA_OKUMA.modules.TestEasttext.TestEasttext.TestEasttext.prepare_end_time">prepare_end_time</a></code></li>
+<li><code><a title="HasanSARMAN_PLAKA_OKUMA.modules.TestEasttext.TestEasttext.TestEasttext.prepare_img" href="#HasanSARMAN_PLAKA_OKUMA.modules.TestEasttext.TestEasttext.TestEasttext.prepare_img">prepare_img</a></code></li>
+<li><code><a title="HasanSARMAN_PLAKA_OKUMA.modules.TestEasttext.TestEasttext.TestEasttext.prepare_start_time" href="#HasanSARMAN_PLAKA_OKUMA.modules.TestEasttext.TestEasttext.TestEasttext.prepare_start_time">prepare_start_time</a></code></li>
+<li><code><a title="HasanSARMAN_PLAKA_OKUMA.modules.TestEasttext.TestEasttext.TestEasttext.prepared_img" href="#HasanSARMAN_PLAKA_OKUMA.modules.TestEasttext.TestEasttext.TestEasttext.prepared_img">prepared_img</a></code></li>
+<li><code><a title="HasanSARMAN_PLAKA_OKUMA.modules.TestEasttext.TestEasttext.TestEasttext.rH" href="#HasanSARMAN_PLAKA_OKUMA.modules.TestEasttext.TestEasttext.TestEasttext.rH">rH</a></code></li>
+<li><code><a title="HasanSARMAN_PLAKA_OKUMA.modules.TestEasttext.TestEasttext.TestEasttext.rW" href="#HasanSARMAN_PLAKA_OKUMA.modules.TestEasttext.TestEasttext.TestEasttext.rW">rW</a></code></li>
+<li><code><a title="HasanSARMAN_PLAKA_OKUMA.modules.TestEasttext.TestEasttext.TestEasttext.retrain" href="#HasanSARMAN_PLAKA_OKUMA.modules.TestEasttext.TestEasttext.TestEasttext.retrain">retrain</a></code></li>
+<li><code><a title="HasanSARMAN_PLAKA_OKUMA.modules.TestEasttext.TestEasttext.TestEasttext.return_dict_with_results" href="#HasanSARMAN_PLAKA_OKUMA.modules.TestEasttext.TestEasttext.TestEasttext.return_dict_with_results">return_dict_with_results</a></code></li>
+<li><code><a title="HasanSARMAN_PLAKA_OKUMA.modules.TestEasttext.TestEasttext.TestEasttext.return_my_dict" href="#HasanSARMAN_PLAKA_OKUMA.modules.TestEasttext.TestEasttext.TestEasttext.return_my_dict">return_my_dict</a></code></li>
+<li><code><a title="HasanSARMAN_PLAKA_OKUMA.modules.TestEasttext.TestEasttext.TestEasttext.run" href="#HasanSARMAN_PLAKA_OKUMA.modules.TestEasttext.TestEasttext.TestEasttext.run">run</a></code></li>
+<li><code><a title="HasanSARMAN_PLAKA_OKUMA.modules.TestEasttext.TestEasttext.TestEasttext.start_" href="#HasanSARMAN_PLAKA_OKUMA.modules.TestEasttext.TestEasttext.TestEasttext.start_">start_</a></code></li>
+<li><code><a title="HasanSARMAN_PLAKA_OKUMA.modules.TestEasttext.TestEasttext.TestEasttext.start_main_timer" href="#HasanSARMAN_PLAKA_OKUMA.modules.TestEasttext.TestEasttext.TestEasttext.start_main_timer">start_main_timer</a></code></li>
+<li><code><a title="HasanSARMAN_PLAKA_OKUMA.modules.TestEasttext.TestEasttext.TestEasttext.start_time" href="#HasanSARMAN_PLAKA_OKUMA.modules.TestEasttext.TestEasttext.TestEasttext.start_time">start_time</a></code></li>
+<li><code><a title="HasanSARMAN_PLAKA_OKUMA.modules.TestEasttext.TestEasttext.TestEasttext.using_gpu" href="#HasanSARMAN_PLAKA_OKUMA.modules.TestEasttext.TestEasttext.TestEasttext.using_gpu">using_gpu</a></code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+</main>
+<footer id="footer">
+<p>Generated by <a href="https://pdoc3.github.io/pdoc"><cite>pdoc</cite> 0.9.2</a>.</p>
+</footer>
+</body>
+</html>
