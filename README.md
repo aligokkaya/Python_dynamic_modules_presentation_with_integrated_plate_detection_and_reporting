@@ -4,29 +4,19 @@ Documentation Linki -> https://hasansarman.github.io/Python_dynamic_modules_pres
 
 
 Bu yazilimdaki amac ->
-```
+
 1- DINAMIK olarak runtime da module eklenme yontemlerini gosterebilmek
-```
-```
 2- farkli moduller kullanarak birden fazla algoritmayi ortak bir sekilde degerlendirebilmek ( old_result klasoru ve INPUT_OUTPUT/reports fikir verecektir.)
-```
-```
 3- pythonda karsilasilan araliksiz Run/Debug islemleri sirasinda test edilen kod ve ciktilarin surekli olarka karisikliga sebeb olmasi musanesebityle otomatik ZIP olusturarark log /cikti/reporlarin paketlenmesi.. 
-```
-```
+
 4- test edilmesi plananan her modul icin ornek -> Human detection icin , coco .. hog ..  dnn gibi bir cok farkli model/yapi denenirken bunlarin birbirleri arasindaki tam performans degerleri. her bir model icin resim hazirlama zamanindan islenmesi ve load timelara kadar gecen surelerin verimli bir sekilde kiyaslanabilmesi icin basit bir test platfomu olarak yazildi. sizlere sadece 
-```
-```
+
 5- python da yeni yeni gelisim gosteren arkadaslara, basit ama sig fonksiyonlarla nasil bir yapi kurulabilecegi gosterilmek istendi.. excel.. csv gibi onemli toolarin nasil entegre edilerek kullanilabilecegi ogretilmis oldu.. 
-```
 
-```
 6- piyasada bircok python profiler oldugu halde.. b8rada timing gibi kisimlarin elle tutulmasinin nedeni ortadaki karisikligi azaltmak.. ve piyasada bir cok basit profilerin temelde ne yaptigini gosterebilmekti. 
-```
 
-```
 7- Cython veya pyinstaller ile paketleyip tum dependencyleri yaninda SO dosyasi olarak basabilecegim halde..  bu yazilimda PYTHON da yazilmis bir kodun gercekte nasil MODULER calismasi gerektigini gostermek icin.. 
-```
+
 
 OTOMATIK dependency injection ekledim.. bu kisim statics. uzerindeki listeyi alip bu listede adi gecen kutuphaneleri tarayip bulamadiklarini runtime da kurmak uzerine kurulu basit bir yapidir.. 
 buradaki asil amac pythonda ihmal edilen IMPORT optimizasyonuna parmak basmaktir.. Duzgun ve optimize edilmis bir impoirt yapisi.. ileride size yaziliminizin herhangi bir dependency gereksinimi yuzunden patlamadan dinamik oalrak genlesebilmesi olanagini nasil taniyacagini gostermektedir. 
