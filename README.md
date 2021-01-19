@@ -44,35 +44,22 @@ openalpr in kurulabilmesi icin asagidaki adimlar izlenmeli..
 ```
 sudo apt-get install libopencv-dev libtesseract-dev git cmake build-essential libleptonica-dev
 
-```
-```
 sudo apt-get install liblog4cplus-dev libcurl3-dev```
-```
+
 sudo apt-get install beanstalkd
-```
-```
+
 git clone https://github.com/openalpr/openalpr.git
-```
-```
+
 cd openalpr/src
 mkdir build
 cd build
-```
-```
-cmake -DCMAKE_INSTALL_PREFIX:PATH=/usr -DCMAKE_INSTALL_SYSCONFDIR:PATH=/etc ..
-```
 
-```
+cmake -DCMAKE_INSTALL_PREFIX:PATH=/usr -DCMAKE_INSTALL_SYSCONFDIR:PATH=/etc ..
 make
-```
-```
+
 sudo make install
 ```
 
-
-```
-wget http://plates.openalpr.com/h786poj.jpg -O lp.jpgalpr lp.jpg
-```
 TEST PLATFOMUNUN DUZGUN CALISABILMESI ICIN VE SIZE GERCEK SKORLARI VE BASARIYI GOSTEREBILMESI ICIN Statics.RESULTSET dosyasini laistirmadan once kendi resultlariniza gore duzenlerseniz.. olusturdugu raporlarda tum sapma sekilleri ve duzeltmeler icin gerekli yuzdelik oneriyi yapacaktir. 
 
 
