@@ -1,0 +1,2 @@
+# Python_dynamic_modules_presentation_with_integrated_plate_detection_and_reporting
+Python dynamic modules presentation with integrated plate detection and reporting
