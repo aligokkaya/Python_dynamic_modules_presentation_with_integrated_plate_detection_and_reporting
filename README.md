@@ -2,6 +2,9 @@
 Documentation Linki -> https://hasansarman.github.io/Python_dynamic_modules_presentation_with_integrated_plate_detection_and_reporting/
 
 
+![Image of excel output](https://hasansarman.github.io/Python_dynamic_modules_presentation_with_integrated_plate_detection_and_reporting/excel.png)
+
+
 
 Bu yazilimdaki amac ->
 
