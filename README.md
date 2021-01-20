@@ -2,6 +2,7 @@
 Documentation Linki -> https://hasansarman.github.io/Python_dynamic_modules_presentation_with_integrated_plate_detection_and_reporting/
 
 Herhangi bir sistem yada dependency ile sorun yasiyorsniz gelistirmeye baslanmak icin asagidaki linkten VIRTUALBOX image indirebilir akabinde.. u image VIRTUALBOX isimli program ile IMPORT ederek hemen kullanmaya baslayabilirsiniz. 
+https://drive.google.com/file/d/1FXQh1EvDW6vCuCxjaWSUISdRZF3Vx1L_/view?usp=sharing
 
 Docker asinaliginiz varsa .. DockerFile i ( GPU icin ayarli) kullanabilirsiniz.. lubcuda ve cudnn sorunlari olmadan gerekli her turk objenin kurulmus halidir.. 
 
