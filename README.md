@@ -1,6 +1,10 @@
 # Python_dynamic_modules_presentation_with_integrated_plate_detection_and_reporting
 Documentation Linki -> https://hasansarman.github.io/Python_dynamic_modules_presentation_with_integrated_plate_detection_and_reporting/
 
+Herhangi bir sistem yada dependency ile sorun yasiyorsniz gelistirmeye baslanmak icin asagidaki linkten VIRTUALBOX image indirebilir akabinde.. u image VIRTUALBOX isimli program ile IMPORT ederek hemen kullanmaya baslayabilirsiniz. 
+
+Docker asinaliginiz varsa .. DockerFile i ( GPU icin ayarli) kullanabilirsiniz.. lubcuda ve cudnn sorunlari olmadan gerekli her turk objenin kurulmus halidir.. 
+
 
 ![Image of excel output](https://hasansarman.github.io/Python_dynamic_modules_presentation_with_integrated_plate_detection_and_reporting/excel.png)
 
