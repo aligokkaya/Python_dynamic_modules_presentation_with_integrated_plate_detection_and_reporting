@@ -116,7 +116,7 @@ PACKAGES = {
     }
 ,"xlsxwriter":{
         "version":-1,
-        "compatible_name":"xlsxwriter"
+        "compatible_name":"XlsxWriter"
     }
 ,"mxnet":{
         "version":-1,
